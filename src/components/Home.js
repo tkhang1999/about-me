@@ -1,4 +1,4 @@
-import homeImg from '../images/home.JPG'
+import profileImg from '../images/profile-pic.png'
 
 const Home = () => {
     return (
@@ -15,7 +15,7 @@ const Home = () => {
             </div>
 
             <div className="home__img">
-                <img src={homeImg} alt="" />
+                <img src={profileImg} alt="" />
             </div>
         </section>
     );

@@ -1,4 +1,4 @@
-import aboutImg from '../images/about.jpeg';
+import aboutImg from '../images/about.jpg';
 
 const About = () => {
     return (
@@ -10,8 +10,16 @@ const About = () => {
                     <img src={aboutImg} alt="" />
                 </div>
                 <div>
-                    <h2 className="about__subtitle">I am Khang</h2>
-                    <p className="about__text">I graduated from Nanyang Technological University with a Bachelor of Engineering (Computer Science)</p>           
+                    <h2 className="about__subtitle">People call me Khang</h2>
+                    <p className="about__text">
+                        I graduated from Nanyang Technological University with a Bachelor of Engineering in Computer Science (Highest Distinction). 
+                        I am a computer science enthusiast and love solving real-world problems.
+                        <br/><br/> 
+                        I have a great interest in developing full-stack applications, algorithms as well as AI, machine learning, and data science.
+                        To pursue my interests, I have taken two elective focuses during college,
+                        one in High Performance Computing and the other in Data Science and Analytics.
+                        The technology stack that I'm currently working in includes Python, Java, React.js, and Node.js.
+                    </p>    
                 </div>                                   
             </div>
     </section>
