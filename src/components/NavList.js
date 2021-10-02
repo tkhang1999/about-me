@@ -10,7 +10,7 @@ const NavLink = () => {
         } else {
             return rootName;
         }
-    }
+    };
 
     return (
         <ul className="nav__list">
