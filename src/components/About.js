@@ -18,7 +18,7 @@ const About = () => {
                         I have a great interest in developing full-stack applications, algorithms as well as AI, machine learning, and data science.
                         To pursue my interests, I have taken two elective focuses during college,
                         one in High Performance Computing and the other in Data Science and Analytics.
-                        The technology stack that I'm currently working in includes Python, Java, React.js, and Node.js.
+                        
                     </p>    
                 </div>                                   
             </div>

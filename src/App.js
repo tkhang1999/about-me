@@ -4,6 +4,7 @@ import ScrollReveal from "scrollreveal";
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
+import Skills from "./components/Skills";
 
 const scrollReveal = () => {
 	const sr = ScrollReveal({
@@ -27,8 +28,9 @@ const scrollReveal = () => {
 	/*SCROLL SKILLS*/
 	sr.reveal('.skills__subtitle',{}); 
 	sr.reveal('.skills__text',{}); 
-	sr.reveal('.skills__data',{interval: 200}); 
-	sr.reveal('.skills__img',{delay: 600});
+	sr.reveal('.skills__list',{}); 
+	// sr.reveal('.skills__data',{interval: 200}); 
+	// sr.reveal('.skills__img',{delay: 600});
 
 	/*SCROLL WORK*/
 	sr.reveal('.work__img',{interval: 200}); 
@@ -53,6 +55,8 @@ const App = () => {
 				<Home />
 				{/* ===== ABOUT ===== */}
 				<About />
+				{/* ===== SKILLS ===== */}
+				<Skills />
 			</main>
 		</div>
 	);
