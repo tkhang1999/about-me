@@ -324,6 +324,12 @@ img{
 .work__container{
   row-gap: 2rem;
 }
+.work__subtitle{
+  margin-bottom: var(--mb-2);
+}
+.work__text{
+  margin-bottom: var(--mb-2);
+}
 .work__img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   border-radius: .5rem;
@@ -443,9 +449,9 @@ img{
     width: 300px;
   }
   .work__container{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    column-gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: initial;
   }
   .contact__form{
     width: 360px;

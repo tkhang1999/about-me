@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from "./components/Skills";
+import Work from "./components/Work";
 
 const scrollReveal = () => {
 	const sr = ScrollReveal({
@@ -35,10 +36,10 @@ const scrollReveal = () => {
 	// sr.reveal('.skills__img',{delay: 600});
 
 	/*SCROLL WORK*/
-	sr.reveal('.work__img',{interval: 200}); 
+	sr.reveal('.work__container',{interval: 200}); 
 
 	/*SCROLL CONTACT*/
-	sr.reveal('.contact__input',{interval: 200}); 
+	// sr.reveal('.contact__input',{interval: 200}); 
 }
 
 const App = () => {
@@ -59,7 +60,20 @@ const App = () => {
 				<About />
 				{/* ===== SKILLS ===== */}
 				<Skills />
+				{/* ===== WORK ===== */}
+				<Work />
 			</main>
+
+			{/* ===== FOOTER ===== */}
+			<footer class="footer">
+				<p class="footer__title">Khang Le</p>
+				{/* <div class="footer__social">
+					<a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+					<a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+					<a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+				</div> */}
+				<p>&#169; 2021 copyright all right reserved</p>
+			</footer>
 		</div>
 	);
 }
