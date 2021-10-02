@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const NavLink = () => {
+const NavList = () => {
     const [active, setActive] = useState(window.location.hash || "#home");
 
     const getClassNameForNavLink = (hash) => {
@@ -23,4 +23,4 @@ const NavLink = () => {
     );
 }
 
-export default NavLink;
+export default NavList;
