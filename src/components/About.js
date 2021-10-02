@@ -1,6 +1,6 @@
 import aboutImg from '../images/about.jpeg';
 
-function About() {
+const About = () => {
     return (
         <section className="about section" id="about">
             <h2 className="section-title">About</h2>

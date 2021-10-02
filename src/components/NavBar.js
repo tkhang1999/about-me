@@ -1,4 +1,4 @@
-function NavBar() {
+const NavBar = () => {
     return (
         <nav className="nav bd-grid">
             <div>

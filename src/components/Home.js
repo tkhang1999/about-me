@@ -1,6 +1,6 @@
 import homeImg from '../images/home.JPG'
 
-function Home() {
+const Home = () => {
     return (
         <section className="home bd-grid" id="home">
             <div className="home__data">
