@@ -12,11 +12,11 @@ const Projects = () => {
                         </p>
                     </div>
                     <dl>
-                        <li>Develop a web application for food review and recommendation in NTU using Django, PostgreSQL, and React.js</li>
-                        <li>Build LSTM and BERT deep learning models that achieve promising performance on the sentiment analysis
+                        <li>Developed a web application for food review and recommendation in NTU using Django, PostgreSQL, and React.js</li>
+                        <li>Built LSTM and BERT deep learning models that achieve promising performance on the sentiment analysis
                             task of Yelp Review dataset using Tensorflow</li>
-                        <li>Implement a Part-of-Speech (POS) algorithm to extract adjective-noun pairs from food reviews as review tags</li>
-                        <li>Create a Solr search system using Learning To Rank and BERT embeddings to find semantically similar reviews 
+                        <li>Implemented a Part-of-Speech (POS) algorithm to extract adjective-noun pairs from food reviews as review tags</li>
+                        <li>Created a Solr search system using Learning To Rank and BERT embeddings to find semantically similar reviews 
                             (Reproduction project for public access: <a href="https://github.com/tkhang1999/Solr-SBERT-semantic-search">Solr-SBERT-semantic-search</a>)</li>
                         <li>Accepted paper to <a href="https://stcai.ai/">STCAI</a> 2021</li>
                     </dl>
