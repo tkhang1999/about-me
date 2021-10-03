@@ -1,4 +1,4 @@
-import aboutImg from '../images/about.jpg';
+import aboutImg from "../images/about.jpg";
 
 const About = () => {
     return (
@@ -18,11 +18,11 @@ const About = () => {
                         I have a great interest in developing full-stack applications, algorithms as well as AI, machine learning, and data science.
                         To pursue my interests, I have taken two elective focuses during college,
                         one in High Performance Computing and the other in Data Science and Analytics.
-                        
+                        In my free time, I enjoy playing table tennis and jogging.
                     </p>    
                 </div>                                   
             </div>
-    </section>
+        </section>
     );
 }
 
