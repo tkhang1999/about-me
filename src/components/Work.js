@@ -20,6 +20,21 @@ const Work = () => {
 
                 <div className="work__container bd-grid">
                     <div>
+                        <h3><a className="work__subtitle" href="https://www.goldmansachs.com/">Goldman Sachs</a></h3>
+                        <p className="work__text">
+                            Summer Analyst <br/>
+                            <i>Jul 2020 - Aug 2020</i>
+                        </p>
+                    </div>
+                    <dl>
+                        <li>Built a web dashboard for memory usage monitoring of multiple applications and processes running in the firm</li>
+                        <li>Developed the multi-threaded backend service using Java Spring Boot and the frontend using React.js</li>
+                        <li>Collaborated with senior engineers to deploy the dashboard successfully to the QA environment</li>
+                    </dl>
+                </div>
+
+                <div className="work__container bd-grid">
+                    <div>
                         <h3><a className="work__subtitle" href="https://www.paypal.com/">Paypal</a></h3>
                         <p className="work__text">
                             Software Engineering Intern <br/>

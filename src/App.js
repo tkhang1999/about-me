@@ -7,6 +7,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 const scrollReveal = () => {
 	const sr = ScrollReveal({
@@ -32,11 +33,11 @@ const scrollReveal = () => {
 	sr.reveal('.skills__text',{});
 	sr.reveal('.skills__list',{});
 
-	/*SCROLL WORK*/
-	sr.reveal('.work__list',{});
-
 	/*SCROLL PROJECTS*/
 	sr.reveal('.projects__list',{});
+
+	/*SCROLL WORK*/
+	sr.reveal('.work__list',{});
 }
 
 const App = () => {
@@ -64,15 +65,7 @@ const App = () => {
 			</main>
 
 			{/* ===== FOOTER ===== */}
-			<footer class="footer">
-				<p class="footer__title">Khang Le</p>
-				{/* <div class="footer__social">
-					<a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-					<a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-					<a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-				</div> */}
-				<p>&#169; 2021 copyright all right reserved</p>
-			</footer>
+			<Footer />
 		</div>
 	);
 }
