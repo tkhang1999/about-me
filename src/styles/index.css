@@ -285,6 +285,7 @@ img{
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  text-align: left;
 }
 .skills__icon{
   font-size: 2rem;
@@ -349,7 +350,6 @@ img{
 /* ===== PROJECTS =====*/
 .projects__container{
   row-gap: 2rem;
-  text-align: center;
 }
 .projects__subtitle{
   margin-bottom: var(--mb-2);
