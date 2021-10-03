@@ -207,6 +207,7 @@ img{
 }
 .home__data{
   align-self: center;
+  margin-bottom: var(--mb-6);
 }
 .home__title{
   font-size: var(--big-font-size);
@@ -455,7 +456,7 @@ img{
     bottom: 15%;
   }
 
-  .about__container, .skills__container, .work__container, .projects__container{
+  .home, .about__container, .skills__container, .work__container, .projects__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     text-align: initial;
