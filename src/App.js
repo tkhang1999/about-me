@@ -43,7 +43,7 @@ const scrollReveal = () => {
 const App = () => {
 	useEffect(() => {
 		scrollReveal();
-    }, []);
+	}, []);
 
 	return (
 		<div>

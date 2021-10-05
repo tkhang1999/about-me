@@ -3,20 +3,18 @@ import { useState, useEffect } from "react";
 const NavList = () => {
     const [active, setActive] = useState(window.location.hash || "#home");
     const [darkTheme, setDarkTheme] = useState(false);
-    
 
     useEffect(() => {
         const isDark = localStorage.getItem("selected-theme") === "dark";
         setDarkTheme(isDark);
-        console.log(isDark)
         document.body.classList[isDark ? "add" : "remove"]("dark__theme");
     }, [])
 
     const toggleDarkTheme = (isDark) => {
-		setDarkTheme(isDark);
-		document.body.classList.toggle("dark__theme", isDark);
+        setDarkTheme(isDark);
+        document.body.classList.toggle("dark__theme", isDark);
         localStorage.setItem("selected-theme", isDark ? "dark" : "light");
-	}
+    }
 
     const getIcon = () => {
         if (darkTheme) {
