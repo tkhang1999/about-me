@@ -1,17 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 /*===== BOX ICONS =====*/
 @import url("https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css");
 /*===== GOOGLE FONTS =====*/
@@ -24,8 +10,10 @@ code {
   
 /*===== Colores =====*/
 :root{
-  --first-color: #4070F4;
+  --body-color: #FFFFFF;
+  --first-color: #4285F4;
   --second-color: #0E2431;
+  --container-color: #FFFFFF;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -73,6 +61,7 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background-color: var(--body-color);
 }
 h1,h2,p{
   margin: 0;
@@ -84,11 +73,29 @@ ul{
 }
 a{
   text-decoration: none;
+  color: #005A9C;
 }
 img{
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark__theme{
+  --body-color: #27302C;
+  --second-color: #FFFFFF;
+  --container-color: #1D2521;
+}
+
+/*========== Button Dark/Light ==========*/
+.change__theme{
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: var(--second-color);
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 /*===== CLASS CSS ===== */
@@ -132,7 +139,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--container-color);
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
@@ -152,8 +159,9 @@ img{
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: var(--container-color);
     transition: .5s;
+    box-shadow: -1px 0 4px rgba(146,161,176,.15);
   }
 }
 .nav__item{
@@ -161,7 +169,7 @@ img{
 }
 .nav__link{
   position: relative;
-  color: #fff;
+  color: var(--second-color);
 }
 .nav__link:hover{
   position: relative;
@@ -287,6 +295,7 @@ img{
   border-radius: .5rem;
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   text-align: left;
+  background-color: var(--container-color);
 }
 .skills__icon{
   font-size: 2rem;
@@ -381,8 +390,8 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
-  color: #fff;
+  background-color: #1D2521;
+  color: #FFFFFF;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -396,7 +405,7 @@ img{
 }
 .footer__icon{
   font-size: 1.5rem;
-  color: #fff;
+  color: #FFFFFF;
   margin: 0 var(--mb-2)
 }
 
@@ -433,6 +442,12 @@ img{
   }
   .nav__link{
     color: var(--second-color);
+  }
+
+  .change__theme{
+    position: initial;
+    color: var(--second-color);
+    margin-left: var(--mb-6);
   }
 
   .home{

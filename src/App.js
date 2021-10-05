@@ -46,7 +46,7 @@ const App = () => {
     }, []);
 
 	return (
-		<div className="body">
+		<div>
 			<header className="l-header">
 				{/* ===== NAVBAR ===== */}
 				<NavBar />
