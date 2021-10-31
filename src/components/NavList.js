@@ -1,5 +1,14 @@
 import { useState, useEffect } from "react";
 
+
+const navItems = [
+    {"key": "#home", "value": "Home"},
+    {"key": "#about", "value": "About"},
+    {"key": "#skills", "value": "Skills"},
+    {"key": "#projects", "value": "Projects"},
+    {"key": "#work", "value": "Work"},
+]
+
 const NavList = () => {
     const [active, setActive] = useState(window.location.hash || "#home");
     const [darkTheme, setDarkTheme] = useState(false);
@@ -35,11 +44,15 @@ const NavList = () => {
 
     return (
         <ul className="nav__list">
-            <li className="nav__item"><a href="#home" className={getClassNameForNavLink("#home")} onClick={() => setActive("#home")}>Home</a></li>
-            <li className="nav__item"><a href="#about" className={getClassNameForNavLink("#about")} onClick={() => setActive("#about")}>About</a></li>
-            <li className="nav__item"><a href="#skills" className={getClassNameForNavLink("#skills")} onClick={() => setActive("#skills")}>Skills</a></li>
-            <li className="nav__item"><a href="#projects" className={getClassNameForNavLink("#projects")} onClick={() => setActive("#projects")}>Projects</a></li>
-            <li className="nav__item"><a href="#work" className={getClassNameForNavLink("#work")} onClick={() => setActive("#work")}>Work</a></li>
+            {navItems.map((item) => {
+                return (
+                    <li className="nav__item">
+                        <a href={item.key} className={getClassNameForNavLink(item.key)} onClick={() => setActive(item.key)}>
+                            {item.value}
+                        </a>
+                    </li>
+                );
+            })}
             {/* light/dark theme toggle */}
             <li><i className={`bx ${getIcon()} change__theme`} id="theme-button" onClick={() => toggleDarkTheme(!darkTheme)}></i></li>
         </ul>
