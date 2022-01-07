@@ -20,16 +20,20 @@ const Work = () => {
           </div>
           <dl>
             <li>
-              Work in the Listed Clearing Department under Global Markets
-              Division
+              Work concurrently in two engineering teams of Listed Clearing
+              Department under Global Markets Division
             </li>
             <li>
-              Maintain various applications using Java that support the
-              derivative clearing business of millions of trades
+              Maintain various in-house clearing applications and microservices
+              using Java Spring Boot that support the derivatives clearing
+              business of millions of trades from both clients and clearing
+              houses
             </li>
             <li>
-              Develop multiple client-facing technologies and dashboards using
-              React.js to fulfill business requirements
+              Develop full-stack web dashboards for Prime Services in Marquee
+              using Java and React.js as part of a digital strategy to help
+              hedge funds manage risk, monitor portfolios, maintain liquidity,
+              and build businesses
             </li>
           </dl>
         </div>
@@ -51,16 +55,13 @@ const Work = () => {
           </div>
           <dl>
             <li>
-              Built a web dashboard for memory usage monitoring of multiple
-              applications and processes running in the firm
-            </li>
-            <li>
-              Developed the multi-threaded backend service using Java Spring
-              Boot and the frontend using React.js
+              Built a full-stack web dashboard for memory usage monitoring of
+              multiple applications and concurrent processes running in the firm
+              using Java Spring Boot and React.js
             </li>
             <li>
               Collaborated with senior engineers to deploy the dashboard
-              successfully to the QA environment
+              successfully and present results to the global team
             </li>
           </dl>
         </div>
@@ -88,8 +89,8 @@ const Work = () => {
             </li>
             <li>
               Researched and proposed the open-source Conflict-free Replicated
-              Data Type (CRDT) Counter designs that support distributed systems
-              and focus on eventual consistency
+              Data Type (CRDT) Counter designs in Java that support distributed
+              systems and focus on eventual consistency
             </li>
           </dl>
         </div>
@@ -113,15 +114,13 @@ const Work = () => {
           <dl>
             <li>
               Built a web application that gives investors and alpha partners
-              access to portfolio creation and monitoring tools
+              access to portfolio creation and monitoring tools using different
+              technologies such as Django, Docker, PostgreSQL, and jQuery for
+              web full-stack development
             </li>
             <li>
-              Used different technologies such as Django, Docker, PostgreSQL,
-              and jQuery for web full-stack development
-            </li>
-            <li>
-              Liaised with CTO to deploy the demo website successfully for
-              investors
+              Liaised with CTO to successfully deploy and present the demo
+              website to investors
             </li>
           </dl>
         </div>
@@ -140,12 +139,9 @@ const Work = () => {
           </div>
           <dl>
             <li>
-              Developed a software running on Raspberry Pi to read and transmit
-              real-time data for construction monitoring
-            </li>
-            <li>
-              Utilized the multi-threading technique for concurrent execution in
-              communicating serial data using Python
+              Developed a software running on Raspberry Pi to concurrently read
+              and transmit real-time serial data for construction monitoring
+              using Python and SQLite
             </li>
             <li>
               Worked with senior engineers to deploy the software successfully

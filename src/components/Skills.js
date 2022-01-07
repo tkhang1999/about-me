@@ -25,7 +25,7 @@ const Skills = () => {
           <div className="skills__data">
             <div className="skills__names">
               <i className="bx bx-code skills__icon"></i>
-              <span className="skills__name">JavaScript</span>
+              <span className="skills__name">JavaScript/TypeScript</span>
             </div>
           </div>
           <div className="skills__data">

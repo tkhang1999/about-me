@@ -25,11 +25,7 @@ const NavList = () => {
   };
 
   const getIcon = () => {
-    if (darkTheme) {
-      return "bx-sun";
-    } else {
-      return "bx-moon";
-    }
+    return darkTheme ? "bx-sun" : "bx-moon";
   };
 
   const getClassNameForNavLink = (hash) => {

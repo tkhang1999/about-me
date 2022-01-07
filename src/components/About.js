@@ -12,16 +12,17 @@ const About = () => {
         <div>
           <h2 className="about__subtitle">People call me Khang</h2>
           <p className="about__text">
-            I graduated from Nanyang Technological University with a Bachelor of
-            Engineering in Computer Science (Highest Distinction). I am a
-            computer science enthusiast and love solving real-world problems.
+            I am a computer science enthusiast who love solving real-world
+            problems. I graduated from Nanyang Technological University with a
+            Bachelor of Engineering with Honours (Highest Distinction) in
+            Computer Science.
             <br />
             <br />I have a great interest in developing full-stack applications,
             algorithms as well as AI, machine learning, and data science. To
             pursue my interests, I have taken two elective focuses during
             college, one in High Performance Computing and the other in Data
-            Science and Analytics. In my free time, I enjoy playing table tennis
-            and jogging.
+            Science and Analytics. In my free time, I enjoy cooking, playing
+            table tennis, and jogging.
           </p>
         </div>
       </div>
