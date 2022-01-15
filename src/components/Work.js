@@ -70,7 +70,7 @@ const Work = () => {
           <div>
             <h3>
               <a className="work__subtitle" href="https://www.paypal.com/">
-                Paypal
+                PayPal
               </a>
             </h3>
             <p className="work__text">
@@ -113,10 +113,10 @@ const Work = () => {
           </div>
           <dl>
             <li>
-              Built a web application that gives investors and alpha partners
-              access to portfolio creation and monitoring tools using different
-              technologies such as Django, Docker, PostgreSQL, and jQuery for
-              web full-stack development
+              Built a full-stack web application that gives investors and alpha
+              partners access to portfolio creation and monitoring tools using
+              different technologies such as Django, Docker, PostgreSQL, and
+              jQuery
             </li>
             <li>
               Liaised with CTO to successfully deploy and present the demo
@@ -139,9 +139,9 @@ const Work = () => {
           </div>
           <dl>
             <li>
-              Developed a software running on Raspberry Pi to concurrently read
-              and transmit real-time serial data for construction monitoring
-              using Python and SQLite
+              Developed a multi-threaded software running on Raspberry Pi to
+              concurrently read and transmit real-time serial data for
+              construction monitoring using Python and SQLite
             </li>
             <li>
               Worked with senior engineers to deploy the software successfully

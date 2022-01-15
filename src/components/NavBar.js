@@ -5,12 +5,7 @@ const NavBar = () => {
   const [toggleShow, setToggleShow] = useState(false);
 
   const getClassNameForMenu = () => {
-    const rootName = "nav__menu";
-    if (toggleShow) {
-      return rootName + " show";
-    } else {
-      return rootName;
-    }
+    return toggleShow ? "nav__menu show" : "nav__menu";
   };
 
   return (

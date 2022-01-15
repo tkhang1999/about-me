@@ -29,12 +29,7 @@ const NavList = () => {
   };
 
   const getClassNameForNavLink = (hash) => {
-    const rootName = "nav__link";
-    if (hash === active) {
-      return rootName + " active";
-    } else {
-      return rootName;
-    }
+    return hash === active ? "nav__link active" : "nav__link";
   };
 
   return (

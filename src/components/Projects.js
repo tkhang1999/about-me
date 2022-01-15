@@ -25,15 +25,13 @@ const Projects = () => {
             <li>
               Researched and implemented a Part-of-Speech (POS) algorithm to
               systematically extract adjective-noun pairs from food reviews as
-              review tags that serve as food review summary with an accuracy of
-              nearly 95%
+              review tags for food review summary with an accuracy of nearly 95%
             </li>
             <li>
               Created a Solr-based search system using Learning To Rank and BERT
-              embeddings to find semantically similar food reviews,
-              outperforming classical text retrieval methods (such as BM25 and
-              tf-idf) by between 29% and 46% (Reproduction project for public
-              access:{" "}
+              embeddings to retrieve semantically similar food reviews,
+              outperforming classical text retrieval methods (BM25 and tf-idf)
+              by between 29% and 46% (Reproduction project for public access:{" "}
               <a href="https://github.com/tkhang1999/Solr-SBERT-semantic-search">
                 Solr-SBERT-semantic-search
               </a>
@@ -84,10 +82,10 @@ const Projects = () => {
           </div>
           <dl>
             <li>
-              Developed a full-stack Web-based Automatic Programming Assessment
-              System (APAS) for Data Structures course using Django to support
-              multiple coding languages (C, Python, and Java) and automate exam
-              and report generations
+              Developed full-stack Web-based Automatic Programming Assessment
+              System (APAS) using Django to support multiple coding languages
+              (C, Python, Java) and automate exam and report generations for
+              Data Structures course
             </li>
             <li>
               Initiated and led a team of 3 to create Web-based Automatic
