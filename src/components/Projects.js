@@ -7,7 +7,8 @@ const Projects = () => {
           <div>
             <h3 className="projects__subtitle">NTU Food Hunter</h3>
             <p className="projects__text">
-              Final Year Project (under Assoc. Prof. Hui Siu Cheung) <br />
+              Final Year Project supervised by Assoc. Prof. Hui Siu Cheung{" "}
+              <br />
               <i>Jun 2020 - May 2021</i>
             </p>
           </div>
@@ -28,8 +29,8 @@ const Projects = () => {
               review tags for food review summary with an accuracy of nearly 95%
             </li>
             <li>
-              Created a Solr-based search system using Learning To Rank and BERT
-              embeddings to retrieve semantically similar food reviews,
+              Created a Solr-based information retrieval system using Learning
+              To Rank and BERT to retrieve semantically similar food reviews,
               outperforming classical text retrieval methods (BM25 and tf-idf)
               by between 29% and 46% (Reproduction project for public access:{" "}
               <a href="https://github.com/tkhang1999/Solr-SBERT-semantic-search">
@@ -73,14 +74,19 @@ const Projects = () => {
         <div className="projects__container bd-grid">
           <div>
             <h3 className="projects__subtitle">
-              Undergraduate Research Experience on CAmpus (URECA)
+              Undergraduate Research Experience on CAmpus (URECA) - President
+              Research Scholar
             </h3>
             <p className="projects__text">
-              Projects under Assoc. Prof. Hui Siu Cheung <br />
-              <i>Sep 2018 - Jun 2019</i>
+              Projects supervised by Assoc. Prof. Hui Siu Cheung <br />
+              <i>Aug 2018 - Jun 2019</i>
             </p>
           </div>
           <dl>
+            <li>
+              Invited to join research-intensive URECA programme in NTU for
+              students with excellent academic standing
+            </li>
             <li>
               Developed full-stack Web-based Automatic Programming Assessment
               System (APAS) using Django to support multiple coding languages
