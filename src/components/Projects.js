@@ -39,8 +39,9 @@ const Projects = () => {
               )
             </li>
             <li>
-              Accepted paper to International Student Conference on Artificial
-              Intelligence (<a href="https://stcai.ai/">STCAI</a>) 2021
+              Accepted <a href="https://arxiv.org/abs/2201.10978">paper</a> to
+              International Student Conference on Artificial Intelligence (
+              <a href="https://stcai.ai/">STCAI</a>) 2021
             </li>
           </dl>
         </div>
