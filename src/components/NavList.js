@@ -36,7 +36,7 @@ const NavList = () => {
     <ul className="nav__list">
       {navItems.map((item) => {
         return (
-          <li className="nav__item">
+          <li key={item.key} className="nav__item">
             <a
               href={item.key}
               className={getClassNameForNavLink(item.key)}

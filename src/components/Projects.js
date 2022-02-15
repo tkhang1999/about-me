@@ -18,19 +18,20 @@ const Projects = () => {
               using Django, PostgreSQL, and React.js
             </li>
             <li>
-              Built LSTM and BERT deep learning models with Yelp dataset that
-              achieve promising performances of 66.76% and 70.52% respectively
-              on the fine-grained sentiment analysis of food reviews using
-              Tensorflow
+              Built LSTM and BERT deep learning models using Tensorflow and Yelp
+              dataset, achieving promising performances of 66.76% and 70.52%
+              respectively on the fine-grained sentiment analysis of food
+              reviews
             </li>
             <li>
-              Researched and implemented a Part-of-Speech (POS) algorithm to
-              systematically extract adjective-noun pairs from food reviews as
-              review tags for food review summary with an accuracy of nearly 95%
+              Researched and implemented a Part-of-Speech (POS) algorithm for
+              food review summarization by extracting adjective-noun pairs from
+              food reviews as descriptive review tags with an accuracy of nearly
+              95%
             </li>
             <li>
               Created a Solr-based information retrieval system using Learning
-              To Rank and BERT to retrieve semantically similar food reviews,
+              To Rank and BERT for semantically similar food review search,
               outperforming classical text retrieval methods (BM25 and tf-idf)
               by between 29% and 46% (Reproduction project for public access:{" "}
               <a href="https://github.com/tkhang1999/Solr-SBERT-semantic-search">
