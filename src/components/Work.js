@@ -25,15 +25,14 @@ const Work = () => {
             </li>
             <li>
               Maintain various in-house clearing applications and microservices
-              using Java Spring Boot that support the derivatives clearing
-              business of millions of trades from both clients and clearing
-              houses
+              to support the derivatives clearing business of millions of trades
+              from both clients and clearing houses using Java and Spring Boot
             </li>
             <li>
-              Develop full-stack web dashboards for Prime Services in Marquee
-              using Java and React.js as part of a digital strategy to help
-              hedge funds manage risk, monitor portfolios, maintain liquidity,
-              and build businesses
+              Develop full-stack web dashboards for Prime Services in Marquee as
+              part of a digital strategy to help hedge funds manage risk,
+              monitor portfolios, maintain liquidity, and build businesses using
+              Java, Dropwizard, and React.js
             </li>
           </dl>
         </div>
@@ -140,7 +139,7 @@ const Work = () => {
           <dl>
             <li>
               Developed a multi-threaded software running on Raspberry Pi to
-              concurrently read and transmit real-time serial data for
+              concurrently read and transmit real-time serial data for wireless
               construction monitoring using Python and SQLite
             </li>
             <li>

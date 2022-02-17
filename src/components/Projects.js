@@ -90,16 +90,16 @@ const Projects = () => {
               students with excellent academic standing
             </li>
             <li>
-              Developed full-stack Web-based Automatic Programming Assessment
-              System (APAS) using Django to support multiple coding languages
-              (C, Python, Java) and automate exam and report generations for
-              Data Structures course
+              Developed web-based Automatic Programming Assessment System (APAS)
+              to support various coding practices (C, Python, Java) and
+              automatic code testing and grading for students in Data Structures
+              course using Django
             </li>
             <li>
-              Initiated and led a team of 3 to create Web-based Automatic
+              Initiated and led a team of 3 to create web-based Automatic
               Relationship Recommendation System (NTUpartner) to connect people
-              in NTU using Django with machine learning and NLP approaches for
-              matching algorithms
+              in NTU with machine learning and NLP approaches for matching
+              algorithms using Python
             </li>
           </dl>
         </div>
