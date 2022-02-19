@@ -5,8 +5,8 @@ const Projects = () => {
       <div className="projects__list">
         <div className="projects__container bd-grid">
           <div>
-            <h3 className="projects__subtitle">NTU Food Hunter</h3>
-            <p className="projects__text">
+            <h3>NTU Food Hunter</h3>
+            <p>
               Final Year Project supervised by Assoc. Prof. Hui Siu Cheung{" "}
               <br />
               <i>Jun 2020 - May 2021</i>
@@ -34,23 +34,35 @@ const Projects = () => {
               To Rank and BERT for semantically similar food review search,
               outperforming classical text retrieval methods (BM25 and tf-idf)
               by between 29% and 46% (Reproduction project for public access:{" "}
-              <a href="https://github.com/tkhang1999/Solr-SBERT-semantic-search">
+              <a
+                className="external__link"
+                href="https://github.com/tkhang1999/Solr-SBERT-semantic-search"
+              >
                 Solr-SBERT-semantic-search
               </a>
               )
             </li>
             <li>
-              Accepted <a href="https://arxiv.org/abs/2201.10978">paper</a> to
-              International Student Conference on Artificial Intelligence (
-              <a href="https://stcai.ai/">STCAI</a>) 2021
+              Accepted{" "}
+              <a
+                className="external__link"
+                href="https://arxiv.org/abs/2201.10978"
+              >
+                paper
+              </a>{" "}
+              to International Student Conference on Artificial Intelligence (
+              <a className="external__link" href="https://stcai.ai/">
+                STCAI
+              </a>
+              ) 2021
             </li>
           </dl>
         </div>
 
         <div className="projects__container bd-grid">
           <div>
-            <h3 className="projects__subtitle">COVID19 Status Chatbot</h3>
-            <p className="projects__text">
+            <h3>COVID19 Status Chatbot</h3>
+            <p>
               Personal Project <br />
               <i>May 2020</i>
             </p>
@@ -60,7 +72,10 @@ const Projects = () => {
               Created an interactive chatbot on multiple platforms to get
               real-time COVID-19 status globally or in any country using
               Node.js, Dialogflow (Google Cloud), and Heroku (Project link:{" "}
-              <a href="https://github.com/tkhang1999/COVID19-status-webhook">
+              <a
+                className="external__link"
+                href="https://github.com/tkhang1999/COVID19-status-webhook"
+              >
                 COVID19-status-webhook
               </a>
               )
@@ -75,11 +90,11 @@ const Projects = () => {
 
         <div className="projects__container bd-grid">
           <div>
-            <h3 className="projects__subtitle">
+            <h3>
               Undergraduate Research Experience on CAmpus (URECA) - President
               Research Scholar
             </h3>
-            <p className="projects__text">
+            <p>
               Projects supervised by Assoc. Prof. Hui Siu Cheung <br />
               <i>Aug 2018 - Jun 2019</i>
             </p>
@@ -91,7 +106,7 @@ const Projects = () => {
             </li>
             <li>
               Developed web-based Automatic Programming Assessment System (APAS)
-              to support various coding practices (C, Python, Java) and
+              to support various coding practices (C, Python, and Java) and
               automatic code testing and grading for students in Data Structures
               course using Django
             </li>

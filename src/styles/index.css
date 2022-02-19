@@ -102,6 +102,11 @@ body.dark__theme {
   cursor: pointer;
 }
 
+/*========== External link ==========*/
+.external__link:hover {
+  border-bottom: 1px solid;
+}
+
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;

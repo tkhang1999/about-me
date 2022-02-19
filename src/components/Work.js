@@ -7,13 +7,13 @@ const Work = () => {
           <div>
             <h3>
               <a
-                className="work__subtitle"
+                className="external__link"
                 href="https://www.goldmansachs.com/"
               >
                 Goldman Sachs
               </a>
             </h3>
-            <p className="work__text">
+            <p>
               Analyst (Software Engineer) <br />
               <i>Jul 2021 - Present</i>
             </p>
@@ -29,8 +29,8 @@ const Work = () => {
               from both clients and clearing houses using Java and Spring Boot
             </li>
             <li>
-              Develop full-stack web dashboards for Prime Services in Marquee as
-              part of a digital strategy to help hedge funds manage risk,
+              Develop full-stack web dashboards for Prime Services in GS Marquee
+              as part of a digital strategy to help hedge funds manage risk,
               monitor portfolios, maintain liquidity, and build businesses using
               Java, Dropwizard, and React.js
             </li>
@@ -41,13 +41,13 @@ const Work = () => {
           <div>
             <h3>
               <a
-                className="work__subtitle"
+                className="external__link"
                 href="https://www.goldmansachs.com/"
               >
                 Goldman Sachs
               </a>
             </h3>
-            <p className="work__text">
+            <p>
               Summer Analyst <br />
               <i>Jul 2020 - Aug 2020</i>
             </p>
@@ -68,11 +68,11 @@ const Work = () => {
         <div className="work__container bd-grid">
           <div>
             <h3>
-              <a className="work__subtitle" href="https://www.paypal.com/">
+              <a className="external__link" href="https://www.paypal.com/">
                 PayPal
               </a>
             </h3>
-            <p className="work__text">
+            <p>
               Software Engineering Intern <br />
               <i>Aug 2019 - Dec 2019</i>
             </p>
@@ -97,13 +97,16 @@ const Work = () => {
         <div className="work__container bd-grid">
           <div>
             <h3>
-              <a className="work__subtitle" href="https://noviscient.com/">
+              <a className="external__link" href="https://noviscient.com/">
                 Noviscient
               </a>
             </h3>
-            <p className="work__text">
+            <p>
               Junior Engineer (Apprenticeship under{" "}
-              <a href="https://www.sginnovate.com/talentprogrammes">
+              <a
+                className="external__link"
+                href="https://www.sginnovate.com/talentprogrammes"
+              >
                 SGInnovate Summation Programme
               </a>
               ) <br />
@@ -127,11 +130,11 @@ const Work = () => {
         <div className="work__container bd-grid">
           <div>
             <h3>
-              <a className="work__subtitle" href="https://www.ackcio.com/">
+              <a className="external__link" href="https://www.ackcio.com/">
                 Ackcio
               </a>
             </h3>
-            <p className="work__text">
+            <p>
               Intern Software Engineer <br />
               <i>May 2018 - Aug 2018</i>
             </p>
