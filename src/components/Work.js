@@ -20,19 +20,20 @@ const Work = () => {
           </div>
           <dl>
             <li>
-              Work concurrently in two engineering teams of Listed Clearing
-              Department under Global Markets Division
+              Work concurrently in Connectivity and Client Technology platforms
+              of Listed Clearing Department under Global Markets Division
             </li>
             <li>
-              Maintain various in-house clearing applications and microservices
-              to support the derivatives clearing business of millions of trades
-              from both clients and clearing houses using Java and Spring Boot
+              Maintain various in-house clearing applications with external
+              connectivity to support the derivatives clearing business of
+              millions of trades from clients and clearing houses using Java and
+              Spring Boot
             </li>
             <li>
-              Develop full-stack web dashboards for Prime Services in GS Marquee
-              as part of a digital strategy to help hedge funds manage risk,
+              Develop full-stack web dashboards for Prime Services in Marquee as
+              part of a digital strategy to help hedge funds manage risk,
               monitor portfolios, maintain liquidity, and build businesses using
-              Java, Dropwizard, and React.js
+              Java and React.js
             </li>
           </dl>
         </div>
