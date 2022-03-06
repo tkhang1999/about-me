@@ -1,4 +1,5 @@
+// setup file
 import { configure } from "enzyme";
-import ReactSixteenAdapter from "enzyme-adapter-react-16";
+import Adapter from "enzyme-adapter-react-16";
 
-configure({ adapter: new ReactSixteenAdapter() });
+configure({ adapter: new Adapter() });
