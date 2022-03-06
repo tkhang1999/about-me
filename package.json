@@ -59,6 +59,7 @@
     },
     "setupFilesAfterEnv": [
       "<rootDir>/src/tests/setupTests.js"
-    ]
+    ],
+    "testEnvironment": "jsdom"
   }
 }

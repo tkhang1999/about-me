@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const navItems = [
+export const navItems = [
   { key: "#home", value: "Home" },
   { key: "#about", value: "About" },
   { key: "#skills", value: "Skills" },
