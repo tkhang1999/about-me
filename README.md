@@ -16,3 +16,9 @@ $ npm start
 ```
 $ npm run deploy
 ```
+
+- Different test run options are defined in `package.json`. Run tests with coverage as follows
+
+```
+$ npm run test:coverage
+```
