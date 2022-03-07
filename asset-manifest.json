@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://tkhang1999.github.io/about-me/static/css/main.d657e1e3.css",
-    "main.js": "https://tkhang1999.github.io/about-me/static/js/main.0e12d56e.js",
-    "static/js/787.e014f07d.chunk.js": "https://tkhang1999.github.io/about-me/static/js/787.e014f07d.chunk.js",
-    "static/media/about.png": "https://tkhang1999.github.io/about-me/static/media/about.02da6e71fa69c0273ef3.png",
-    "static/media/home.png": "https://tkhang1999.github.io/about-me/static/media/home.c54f1134fa4e336fd6ce.png",
-    "index.html": "https://tkhang1999.github.io/about-me/index.html",
-    "main.d657e1e3.css.map": "https://tkhang1999.github.io/about-me/static/css/main.d657e1e3.css.map",
-    "main.0e12d56e.js.map": "https://tkhang1999.github.io/about-me/static/js/main.0e12d56e.js.map",
-    "787.e014f07d.chunk.js.map": "https://tkhang1999.github.io/about-me/static/js/787.e014f07d.chunk.js.map"
+    "main.css": "/about-me/static/css/main.d657e1e3.css",
+    "main.js": "/about-me/static/js/main.46e694dd.js",
+    "static/js/787.e014f07d.chunk.js": "/about-me/static/js/787.e014f07d.chunk.js",
+    "static/media/about.png": "/about-me/static/media/about.02da6e71fa69c0273ef3.png",
+    "static/media/home.png": "/about-me/static/media/home.c54f1134fa4e336fd6ce.png",
+    "index.html": "/about-me/index.html",
+    "main.d657e1e3.css.map": "/about-me/static/css/main.d657e1e3.css.map",
+    "main.46e694dd.js.map": "/about-me/static/js/main.46e694dd.js.map",
+    "787.e014f07d.chunk.js.map": "/about-me/static/js/787.e014f07d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d657e1e3.css",
-    "static/js/main.0e12d56e.js"
+    "static/js/main.46e694dd.js"
   ]
 }
