@@ -14,7 +14,7 @@
   --first-color: #4285f4;
   --second-color: #0e2431;
   --container-color: #ffffff;
-  --link-color: #005a9c;
+  --link-color: #408bd0;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -265,7 +265,7 @@ body.dark__theme {
   border-radius: 0.5rem;
 }
 .button:hover {
-  background-color: var(--link-color);
+  background-color: #005a9c;
 }
 
 /* ===== ABOUT =====*/
