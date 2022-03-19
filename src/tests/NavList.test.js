@@ -15,17 +15,17 @@ describe("test NavList component", () => {
 
   test("sets theme at first render", () => {
     ["dark", "light"].forEach((theme) => {
-      const mockSetDarkTheme = jest.fn();
+      const mockSetIsDarkTheme = jest.fn();
       jest.spyOn(React, "useEffect").mockImplementation((f) => f());
       jest
         .spyOn(React, "useState")
-        .mockImplementation((initState) => [initState, mockSetDarkTheme]);
+        .mockImplementation((initState) => [initState, mockSetIsDarkTheme]);
       jest
         .spyOn(window.localStorage.__proto__, "getItem")
         .mockImplementation(() => theme);
 
       shallow(<NavList />);
-      expect(mockSetDarkTheme).toHaveBeenCalledWith(theme === "dark");
+      expect(mockSetIsDarkTheme).toHaveBeenCalledWith(theme === "dark");
     });
   });
 
@@ -45,15 +45,15 @@ describe("test NavList component", () => {
 
   test("toggles light/dark theme", () => {
     [true, false].forEach((isDark) => {
-      const mockDarkTheme = isDark;
-      const mockSetDarkTheme = jest.fn();
+      const mockIsDarkTheme = isDark;
+      const mockSetIsDarkTheme = jest.fn();
       jest
         .spyOn(React, "useState")
-        .mockImplementation(() => [mockDarkTheme, mockSetDarkTheme]);
+        .mockImplementation(() => [mockIsDarkTheme, mockSetIsDarkTheme]);
       const wrapper = shallow(<NavList />);
       wrapper.find(Toggle).simulate("change");
 
-      expect(mockSetDarkTheme).toHaveBeenCalledWith(!mockDarkTheme);
+      expect(mockSetIsDarkTheme).toHaveBeenCalledWith(!mockIsDarkTheme);
     });
   });
 });

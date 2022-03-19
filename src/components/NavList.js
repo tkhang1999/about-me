@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Toggle from "react-toggle";
-import "react-toggle/style.css";
 
 export const navItems = [
   { key: "#home", value: "Home" },

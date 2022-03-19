@@ -21,6 +21,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "eject": "react-scripts eject",
+    "prettier": "prettier --write .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

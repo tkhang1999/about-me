@@ -2,6 +2,8 @@
 @import url("https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css");
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*===== REACT TOGGLE =====*/
+@import url("react-toggle/style.css");
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -99,13 +101,11 @@ body.dark__theme {
   position: absolute;
   right: 1rem;
   top: 1.8rem;
-  font-size: 1rem;
   cursor: pointer;
 }
 .toggle__icon {
-  position: absolute;
-  font-size: 0.8rem;
   color: #ffffff;
+  font-size: 0.8rem;
 }
 .toggle__theme.react-toggle--checked .react-toggle-track {
   background-color: var(--first-color);
