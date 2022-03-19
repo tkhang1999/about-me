@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Toggle from "react-toggle";
+import "react-toggle/style.css";
 
 export const navItems = [
   { key: "#home", value: "Home" },
@@ -10,22 +12,18 @@ export const navItems = [
 
 const NavList = () => {
   const [active, setActive] = useState(window.location.hash || "#home");
-  const [darkTheme, setDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   useEffect(() => {
     const isDark = localStorage.getItem("selected-theme") === "dark";
-    setDarkTheme(isDark);
+    setIsDarkTheme(isDark);
     document.body.classList[isDark ? "add" : "remove"]("dark__theme");
   }, []);
 
   const toggleDarkTheme = (isDark) => {
-    setDarkTheme(isDark);
+    setIsDarkTheme(isDark);
     document.body.classList.toggle("dark__theme", isDark);
     localStorage.setItem("selected-theme", isDark ? "dark" : "light");
-  };
-
-  const getIcon = () => {
-    return darkTheme ? "bx-sun" : "bx-moon";
   };
 
   const getClassNameForNavLink = (hash) => {
@@ -48,12 +46,16 @@ const NavList = () => {
         );
       })}
       {/* light/dark theme toggle */}
-      <li>
-        <i
-          className={`bx ${getIcon()} change__theme`}
-          id="theme-button"
-          onClick={() => toggleDarkTheme(!darkTheme)}
-        ></i>
+      <li className="toggle__item">
+        <Toggle
+          checked={isDarkTheme}
+          className="toggle__theme"
+          icons={{
+            checked: <i className="bx bx-moon toggle__icon" />,
+            unchecked: <i className="bx bx-sun toggle__icon" />,
+          }}
+          onChange={() => toggleDarkTheme(!isDarkTheme)}
+        />
       </li>
     </ul>
   );

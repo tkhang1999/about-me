@@ -1,5 +1,6 @@
 import { shallow } from "enzyme";
 import React from "react";
+import Toggle from "react-toggle";
 
 import NavList, { navItems } from "../components/NavList";
 
@@ -9,7 +10,7 @@ describe("test NavList component", () => {
 
     expect(wrapper.find(".nav__list").exists()).toBeTruthy();
     expect(wrapper.find(".nav__item").length).toEqual(navItems.length);
-    expect(wrapper.find(".change__theme").length).toEqual(1);
+    expect(wrapper.find(Toggle).length).toEqual(1);
   });
 
   test("sets theme at first render", () => {
@@ -50,7 +51,7 @@ describe("test NavList component", () => {
         .spyOn(React, "useState")
         .mockImplementation(() => [mockDarkTheme, mockSetDarkTheme]);
       const wrapper = shallow(<NavList />);
-      wrapper.find(".change__theme").simulate("click");
+      wrapper.find(Toggle).simulate("change");
 
       expect(mockSetDarkTheme).toHaveBeenCalledWith(!mockDarkTheme);
     });

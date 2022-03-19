@@ -10,6 +10,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "^5.0.0",
+    "react-toggle": "^4.1.2",
     "scrollreveal": "^4.0.9",
     "web-vitals": "^1.1.2"
   },

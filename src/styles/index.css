@@ -12,6 +12,7 @@
 :root {
   --body-color: #ffffff;
   --first-color: #4285f4;
+  --first-color-hover: #005a9c;
   --second-color: #0e2431;
   --container-color: #ffffff;
   --link-color: #408bd0;
@@ -94,13 +95,24 @@ body.dark__theme {
 }
 
 /*========== Button Dark/Light ==========*/
-.change__theme {
+.toggle__item {
   position: absolute;
   right: 1rem;
   top: 1.8rem;
-  color: var(--second-color);
   font-size: 1rem;
   cursor: pointer;
+}
+.toggle__icon {
+  position: absolute;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.toggle__theme.react-toggle--checked .react-toggle-track {
+  background-color: var(--first-color);
+}
+.toggle__theme.react-toggle--checked:hover:not(.react-toggle__disable)
+  .react-toggle-track {
+  background-color: var(--first-color-hover);
 }
 
 /*========== External link ==========*/
@@ -255,7 +267,7 @@ body.dark__theme {
   width: 295px;
 }
 
-/*BUTTONS*/
+/*===== BUTTONS =====*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -265,7 +277,7 @@ body.dark__theme {
   border-radius: 0.5rem;
 }
 .button:hover {
-  background-color: #005a9c;
+  background-color: var(--first-color-hover);
 }
 
 /* ===== ABOUT =====*/
@@ -415,7 +427,7 @@ body.dark__theme {
     color: var(--second-color);
   }
 
-  .change__theme {
+  .toggle__item {
     position: initial;
     color: var(--second-color);
     margin-left: var(--mb-6);
