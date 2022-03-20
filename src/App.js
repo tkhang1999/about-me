@@ -12,32 +12,15 @@ import Footer from "./components/Footer";
 const scrollReveal = () => {
   const sr = ScrollReveal({
     origin: "top",
-    distance: "80px",
+    distance: "60px",
     duration: 600,
-    reset: true,
+    reset: false,
   });
 
-  /*SCROLL HOME*/
+  // reveal home section at first load
   sr.reveal(".home__title", {});
-  sr.reveal(".button", { delay: 200 });
-  sr.reveal(".home__img", { delay: 200 });
-  sr.reveal(".home__social-icon", { interval: 200 });
-
-  /*SCROLL ABOUT*/
-  sr.reveal(".about__img", {});
-  sr.reveal(".about__subtitle", {});
-  sr.reveal(".about__text", {});
-
-  /*SCROLL SKILLS*/
-  sr.reveal(".skills__subtitle", {});
-  sr.reveal(".skills__text", {});
-  sr.reveal(".skills__list", {});
-
-  /*SCROLL PROJECTS*/
-  sr.reveal(".projects__list", {});
-
-  /*SCROLL WORK*/
-  sr.reveal(".work__list", {});
+  sr.reveal(".home__button", { delay: 200 });
+  sr.reveal(".home__social-icon", { delay: 400, interval: 200 });
 };
 
 const App = () => {

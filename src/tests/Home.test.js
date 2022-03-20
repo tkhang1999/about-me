@@ -8,7 +8,7 @@ describe("test Home component", () => {
     expect(wrapper.find("#home").exists()).toBeTruthy();
     expect(wrapper.find(".home__data").length).toEqual(1);
     expect(wrapper.find(".home__title").length).toEqual(1);
-    expect(wrapper.find(".button").length).toEqual(1);
+    expect(wrapper.find(".home__button").length).toEqual(1);
     expect(wrapper.find(".home__social").length).toEqual(1);
     expect(wrapper.find(".home__social-icon").length).toEqual(2);
     expect(wrapper.find(".home__img").length).toEqual(1);

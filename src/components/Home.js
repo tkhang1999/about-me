@@ -11,7 +11,7 @@ const Home = () => {
             I'm <span className="home__title-color">Khang</span>.<br />A Solid
             Software Engineer
           </h1>
-          <a href="mailto:tkhang1999@gmail.com" className="button">
+          <a href="mailto:tkhang1999@gmail.com" className="home__button">
             Contact
           </a>
         </div>

@@ -37,6 +37,6 @@ describe("test App component", () => {
     shallow(<App />);
 
     expect(ScrollReveal).toHaveBeenCalledTimes(1);
-    expect(mockReveal).toHaveBeenCalledTimes(12);
+    expect(mockReveal).toHaveBeenCalledTimes(3);
   });
 });

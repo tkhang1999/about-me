@@ -96,7 +96,7 @@ body.dark__theme {
   --container-color: #1d2521;
 }
 
-/*========== Button Dark/Light ==========*/
+/*========== Toggle Dark/Light ==========*/
 .toggle__item {
   position: absolute;
   right: 1rem;
@@ -267,8 +267,8 @@ body.dark__theme {
   width: 295px;
 }
 
-/*===== BUTTONS =====*/
-.button {
+/*===== HOME BUTTON =====*/
+.home__button {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
@@ -276,7 +276,7 @@ body.dark__theme {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
 }
-.button:hover {
+.home__button:hover {
   background-color: var(--first-color-hover);
 }
 
