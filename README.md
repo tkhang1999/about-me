@@ -1,4 +1,7 @@
 # about-me
+![GitHub CI](https://img.shields.io/github/workflow/status/tkhang1999/about-me/CICD/master)
+![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/tkhang1999/about-me/master)
+![CodeFactor Code Quality](https://img.shields.io/codefactor/grade/github/tkhang1999/about-me/master)
 
 This is my responsive personal website built using React.js and CSS
 
