@@ -50,8 +50,8 @@ const NavList = () => {
           checked={isDarkTheme}
           className="toggle__theme"
           icons={{
-            checked: <i className="bx bx-moon toggle__icon" />,
-            unchecked: <i className="bx bx-sun toggle__icon" />,
+            checked: <i className="bx bxs-moon toggle__icon" />,
+            unchecked: <i className="bx bxs-sun toggle__icon" />,
           }}
           onChange={() => toggleDarkTheme(!isDarkTheme)}
         />
