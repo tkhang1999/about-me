@@ -33,7 +33,7 @@ describe("test NavList component", () => {
     const mockSetItem = jest.fn();
     jest
       .spyOn(React, "useState")
-      .mockImplementation(() => ["#test", mockSetItem]);
+      .mockImplementation((initState) => [initState, mockSetItem]);
     const firstItem = shallow(<NavList />)
       .find(".nav__item")
       .first()
