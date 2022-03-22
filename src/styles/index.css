@@ -4,28 +4,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== REACT TOGGLE =====*/
 @import url("react-toggle/style.css");
-/*===== VARIABLES CSS =====*/
+
 :root {
+  /*===== Variables CSS =====*/
   --header-height: 3rem;
   --font-semi: 600;
-}
-
-/*===== Colores =====*/
-:root {
+  /*===== Colores =====*/
   --body-color: #ffffff;
   --first-color: #4285f4;
   --first-color-hover: #005a9c;
   --second-color: #0e2431;
   --container-color: #ffffff;
   --link-color: #408bd0;
-}
-
-/*===== Fuente y tipografia =====*/
-:root {
+  /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
+  /*===== Margenes =====*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 @media screen and (min-width: 768px) {
   :root {
@@ -33,24 +40,6 @@
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
   }
-}
-
-/*===== Margenes =====*/
-:root {
-  --mb-1: 0.5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-}
-
-/*===== z index =====*/
-:root {
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
 }
 
 /*===== BASE =====*/
@@ -113,6 +102,9 @@ body.dark__theme {
 .toggle__theme.react-toggle--checked:hover:not(.react-toggle__disable)
   .react-toggle-track {
   background-color: var(--first-color-hover);
+}
+.toggle__theme.react-toggle--checked .react-toggle-thumb {
+  border-color: var(--first-color);
 }
 
 /*========== External link ==========*/
