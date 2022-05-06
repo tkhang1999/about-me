@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ScrollReveal from "scrollreveal";
 
 import NavBar from "./components/NavBar";
@@ -24,17 +24,25 @@ const scrollReveal = () => {
 };
 
 const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     scrollReveal();
   }, []);
+
+  const onClick = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
 
   return (
     <div>
       <header className="l-header">
         {/* ===== NAVBAR ===== */}
-        <NavBar />
+        <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       </header>
-      <main className="l-main">
+      <main className="l-main" onClick={onClick}>
         {/* ===== HOME ===== */}
         <Home />
         {/* ===== ABOUT ===== */}

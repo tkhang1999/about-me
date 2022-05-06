@@ -1,11 +1,8 @@
-import { useState } from "react";
 import NavList from "./NavList";
 
-const NavBar = () => {
-  const [toggleShow, setToggleShow] = useState(false);
-
+const NavBar = (props) => {
   const getClassNameForMenu = () => {
-    return toggleShow ? "nav__menu show" : "nav__menu";
+    return props.isMenuOpen ? "nav__menu show" : "nav__menu";
   };
 
   return (
@@ -23,7 +20,7 @@ const NavBar = () => {
       <div
         className="nav__toggle"
         id="nav-toggle"
-        onClick={() => setToggleShow(!toggleShow)}
+        onClick={() => props.setIsMenuOpen(!props.isMenuOpen)}
       >
         <i className="bx bx-menu"></i>
       </div>
