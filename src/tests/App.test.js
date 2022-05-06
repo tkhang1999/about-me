@@ -39,4 +39,26 @@ describe("test App component", () => {
     expect(ScrollReveal).toHaveBeenCalledTimes(1);
     expect(mockReveal).toHaveBeenCalledTimes(3);
   });
+
+  test("clicks main should close the nav menu if it is open", () => {
+    const mockSetIsMenuOpen = jest.fn();
+    jest
+      .spyOn(React, "useState")
+      .mockImplementation(() => [true, mockSetIsMenuOpen]);
+    const wrapper = shallow(<App />);
+    wrapper.find("main").simulate("click");
+
+    expect(mockSetIsMenuOpen).toHaveBeenCalledWith(false);
+  });
+
+  test("clicks main should do nothing if nav menu is closed", () => {
+    const mockSetIsMenuOpen = jest.fn();
+    jest
+      .spyOn(React, "useState")
+      .mockImplementation(() => [false, mockSetIsMenuOpen]);
+    const wrapper = shallow(<App />);
+    wrapper.find("main").simulate("click");
+
+    expect(mockSetIsMenuOpen).toHaveBeenCalledTimes(0);
+  });
 });

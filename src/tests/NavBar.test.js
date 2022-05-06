@@ -5,8 +5,18 @@ import NavBar from "../components/NavBar";
 import NavList from "../components/NavList";
 
 describe("test NavBar component", () => {
+  let mockIsMenuOpen;
+  let mockSetIsMenuOpen;
+
+  beforeEach(() => {
+    mockIsMenuOpen = false;
+    mockSetIsMenuOpen = jest.fn();
+  });
+
   test("renders NavBar correctly", () => {
-    const wrapper = shallow(<NavBar />);
+    const wrapper = shallow(
+      <NavBar isMenuOpen={mockIsMenuOpen} setIsMenuOpen={mockSetIsMenuOpen} />
+    );
 
     expect(wrapper.find("nav").exists()).toBeTruthy();
     expect(wrapper.find(".nav__menu").exists()).toBeTruthy();
@@ -16,9 +26,11 @@ describe("test NavBar component", () => {
     expect(wrapper.find(".nav__toggle").length).toEqual(1);
   });
 
-  test("renders NavBar correctly with true toggle", () => {
-    jest.spyOn(React, "useState").mockImplementation(() => [true, jest.fn()]);
-    const wrapper = shallow(<NavBar />);
+  test("renders NavBar correctly with open menu", () => {
+    mockIsMenuOpen = true;
+    const wrapper = shallow(
+      <NavBar isMenuOpen={mockIsMenuOpen} setIsMenuOpen={mockSetIsMenuOpen} />
+    );
 
     expect(wrapper.find("nav").exists()).toBeTruthy();
     expect(wrapper.find(".nav__menu").exists()).toBeTruthy();
@@ -27,14 +39,11 @@ describe("test NavBar component", () => {
   });
 
   test("clicks nav toggle", () => {
-    const mockToggle = false;
-    const mockSetToggle = jest.fn();
-    jest
-      .spyOn(React, "useState")
-      .mockImplementation(() => [mockToggle, mockSetToggle]);
-    const wrapper = shallow(<NavBar />);
+    const wrapper = shallow(
+      <NavBar isMenuOpen={mockIsMenuOpen} setIsMenuOpen={mockSetIsMenuOpen} />
+    );
     wrapper.find("#nav-toggle").simulate("click");
 
-    expect(mockSetToggle).toHaveBeenCalledWith(!mockToggle);
+    expect(mockSetIsMenuOpen).toHaveBeenCalledWith(!mockIsMenuOpen);
   });
 });
