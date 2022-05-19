@@ -1,9 +1,7 @@
 import NavList from "./NavList";
 
 const NavBar = (props) => {
-  const getClassNameForMenu = () => {
-    return props.isMenuOpen ? "nav__menu show" : "nav__menu";
-  };
+  const menuClassName = props.isMenuOpen ? "nav__menu show" : "nav__menu";
 
   return (
     <nav className="nav bd-grid">
@@ -13,7 +11,7 @@ const NavBar = (props) => {
         </a>
       </div>
 
-      <div className={getClassNameForMenu()} id="nav-menu">
+      <div className={menuClassName} id="nav-menu">
         <NavList />
       </div>
 
