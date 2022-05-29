@@ -14,24 +14,23 @@ const Projects = () => {
           </div>
           <dl>
             <li>
-              Developed a website for food review and recommendation in NTU
-              using Django, PostgreSQL, and React.js
+              Developed a website (Food Hunter) for food review and
+              recommendation using Django, PostgreSQL, and React
             </li>
             <li>
-              Built LSTM and BERT deep learning models using Tensorflow and Yelp
-              dataset, achieving promising performances of 66.76% and 70.52%
-              respectively on the fine-grained sentiment analysis of food
+              Build LSTM and BERT deep learning models using TensorFlow/Keras
+              and Yelp dataset, achieving promising performances of 66.76% and
+              70.52% respectively on the fine-grained sentiment analysis of food
               reviews
             </li>
             <li>
               Researched and implemented a Part-of-Speech (POS) algorithm for
-              food review summarization by extracting adjective-noun pairs from
-              food reviews as descriptive review tags with an accuracy of nearly
-              95%
+              review tag generation by extracting adjectivenoun pairs from food
+              reviews with an accuracy of nearly 95%
             </li>
             <li>
               Created a Solr-based information retrieval system using Learning
-              To Rank and BERT for semantically similar food review search,
+              To Rank (RankNet) and BERT for semantically similar food search,
               outperforming classical text retrieval methods (BM25 and tf-idf)
               by between 29% and 46% (Reproduction project for public access:{" "}
               <a
@@ -43,14 +42,14 @@ const Projects = () => {
               )
             </li>
             <li>
-              Accepted{" "}
+              Presented{" "}
               <a
                 className="external__link"
                 href="https://arxiv.org/abs/2201.10978"
               >
-                paper
+                research paper
               </a>{" "}
-              to International Student Conference on Artificial Intelligence (
+              at International Student Conference on Artificial Intelligence (
               <a className="external__link" href="https://stcai.ai/">
                 STCAI
               </a>
@@ -82,8 +81,8 @@ const Projects = () => {
             </li>
             <li>
               Invited to be a guest speaker at a Google Developer Groups (GDG)
-              webinar to share my learning and chatbot development experiences
-              on Google Cloud Platform
+              webinar to share about my chatbot development and learning
+              experiences on Google Cloud Platform
             </li>
           </dl>
         </div>
@@ -95,26 +94,21 @@ const Projects = () => {
               Research Scholar
             </h3>
             <p>
-              Projects supervised by Assoc. Prof. Hui Siu Cheung <br />
+              Research Projects supervised by Assoc. Prof. Hui Siu Cheung <br />
               <i>Aug 2018 - Jun 2019</i>
             </p>
           </div>
           <dl>
             <li>
-              Invited to join research-intensive URECA programme in NTU for
-              students with excellent academic standing
-            </li>
-            <li>
               Developed web-based Automatic Programming Assessment System (APAS)
-              to support various coding practices (C, Python, and Java) and
+              to provide various coding practices (C, Python, and Java) and
               automatic code testing and grading for students in Data Structures
               course using Django
             </li>
             <li>
-              Initiated and led a team of 3 to create web-based Automatic
+              Initiated and led a team of 3 to create mobile-web Automatic
               Relationship Recommendation System (NTUpartner) to connect people
-              in NTU with machine learning and NLP approaches for matching
-              algorithms using Python
+              and recommend new friends in NTU
             </li>
           </dl>
         </div>
