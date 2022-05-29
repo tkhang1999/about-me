@@ -20,8 +20,9 @@ const Work = () => {
           </div>
           <dl>
             <li>
-              Work concurrently in Connectivity and Client Technology platforms
-              of Listed Clearing Department under Global Markets Division
+              Work concurrently in Connectivity and Futures Client Technology
+              platforms of Listed Clearing Department under Global Markets
+              Division
             </li>
             <li>
               Maintain various in-house clearing applications with external
@@ -33,7 +34,7 @@ const Work = () => {
               Develop full-stack web dashboards for Prime Services in Marquee as
               part of a digital strategy to help hedge funds manage risk,
               monitor portfolios, maintain liquidity, and build businesses using
-              Java and React.js
+              Java and React
             </li>
           </dl>
         </div>
@@ -57,7 +58,7 @@ const Work = () => {
             <li>
               Built a full-stack web dashboard for memory usage monitoring of
               multiple applications and concurrent processes running in the firm
-              using Java Spring Boot and React.js
+              using Java Spring Boot and React
             </li>
             <li>
               Collaborated with senior engineers to deploy the dashboard

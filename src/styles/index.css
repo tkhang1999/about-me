@@ -451,7 +451,12 @@ body.dark__theme {
     bottom: 15%;
   }
 
-  .home,
+  .home {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    text-align: initial;
+  }
+
   .about__container,
   .skills__container,
   .work__container,

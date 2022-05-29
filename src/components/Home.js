@@ -8,8 +8,8 @@ const Home = () => {
           <h1 className="home__title">
             Hi,
             <br />
-            I'm <span className="home__title-color">Khang</span>.<br />A Solid
-            Software Engineer
+            I'm <span className="home__title-color">Khang</span>.<br />A
+            Computer Science Enthusiast
           </h1>
           <a href="mailto:tkhang1999@gmail.com" className="home__button">
             Contact
