@@ -427,6 +427,9 @@ body.dark__theme {
 
   .home {
     height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    text-align: initial;
   }
   .home__data {
     align-self: flex-end;
@@ -449,12 +452,6 @@ body.dark__theme {
   .home__img {
     width: 457px;
     bottom: 15%;
-  }
-
-  .home {
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    text-align: initial;
   }
 
   .about__container,
