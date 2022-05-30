@@ -5,7 +5,7 @@ const Projects = () => {
       <div className="projects__list">
         <div className="projects__container bd-grid">
           <div>
-            <h3>NTU Food Hunter</h3>
+            <h3>Machine Learning for Food Review and Recommendation</h3>
             <p>
               Final Year Project supervised by Assoc. Prof. Hui Siu Cheung{" "}
               <br />
@@ -18,21 +18,21 @@ const Projects = () => {
               recommendation using Django, PostgreSQL, and React
             </li>
             <li>
-              Build LSTM and BERT deep learning models using TensorFlow/Keras
+              Built LSTM and BERT deep learning models using TensorFlow/Keras
               and Yelp dataset, achieving promising performances of 66.76% and
               70.52% respectively on the fine-grained sentiment analysis of food
               reviews
             </li>
             <li>
               Researched and implemented a Part-of-Speech (POS) algorithm for
-              review tag generation by extracting adjectivenoun pairs from food
+              review tag generation by extracting adjective-noun pairs from food
               reviews with an accuracy of nearly 95%
             </li>
             <li>
-              Created a Solr-based information retrieval system using Learning
-              To Rank (RankNet) and BERT for semantically similar food search,
-              outperforming classical text retrieval methods (BM25 and tf-idf)
-              by between 29% and 46% (Reproduction project for public access:{" "}
+              Created a Solr-based information retrieval system for semantic
+              food search by utilizing BERT embeddings to retrieve semantically
+              similar food reviews and products (Reproduction project for public
+              access:{" "}
               <a
                 className="external__link"
                 href="https://github.com/tkhang1999/Solr-SBERT-semantic-search"
@@ -40,6 +40,11 @@ const Projects = () => {
                 Solr-SBERT-semantic-search
               </a>
               )
+            </li>
+            <li>
+              Trained a RankNet model, a Learning To Rank neural network model,
+              for the re-ranking of food search results, outperforming classical
+              text retrieval methods (BM25 and tf-idf) by between 29% and 46%
             </li>
             <li>
               Presented{" "}
