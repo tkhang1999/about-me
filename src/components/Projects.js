@@ -94,16 +94,17 @@ const Projects = () => {
 
         <div className="projects__container bd-grid">
           <div>
-            <h3>
-              Undergraduate Research Experience on CAmpus (URECA) - President
-              Research Scholar
-            </h3>
+            <h3>Undergraduate Research Experience on CAmpus (URECA)</h3>
             <p>
               Research Projects supervised by Assoc. Prof. Hui Siu Cheung <br />
               <i>Aug 2018 - Jun 2019</i>
             </p>
           </div>
           <dl>
+            <li>
+              Invited to join research-intensive URECA programme in NTU for
+              students with excellent academic standing
+            </li>
             <li>
               Developed web-based Automatic Programming Assessment System (APAS)
               to provide various coding practices (C, Python, and Java) and
@@ -114,6 +115,12 @@ const Projects = () => {
               Initiated and led a team of 3 to create mobile-web Automatic
               Relationship Recommendation System (NTUpartner) to connect people
               and recommend new friends in NTU
+            </li>
+            <li>
+              Implemented machine learning and NLP approaches for friend
+              matching algorithms, such as Word2Vec embedding model, to compare
+              and match user profiles based on textual data and their cosine
+              similarity
             </li>
           </dl>
         </div>
