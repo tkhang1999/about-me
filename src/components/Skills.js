@@ -3,7 +3,7 @@ const Skills = () => {
     <section className="skills section" id="skills">
       <h2 className="section-title">Skills</h2>
 
-      <div className="skills__container bd-grid">
+      <div className="skills__container bd-container bd-grid">
         <h2 className="skills__subtitle">Profesional Skills</h2>
         <p className="skills__text">
           The technology stack that I'm currently working on includes, but not

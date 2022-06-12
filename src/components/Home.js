@@ -2,7 +2,7 @@ import homeImg from "../images/home.png";
 
 const Home = () => {
   return (
-    <section className="home bd-grid" id="home">
+    <section className="home bd-container bd-grid" id="home">
       <div>
         <div className="home__data">
           <h1 className="home__title">

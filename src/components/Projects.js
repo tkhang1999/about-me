@@ -2,8 +2,8 @@ const Projects = () => {
   return (
     <section className="projects section" id="projects">
       <h2 className="section-title">Projects</h2>
-      <div className="projects__list">
-        <div className="projects__container bd-grid">
+      <div className="project__list">
+        <div className="project__container bd-container">
           <div>
             <h3>Machine Learning for Food Review and Recommendation</h3>
             <p>
@@ -12,39 +12,21 @@ const Projects = () => {
               <i>Jun 2020 - May 2021</i>
             </p>
           </div>
-          <dl>
+          <dl className="project__text">
             <li>
               Developed a website (Food Hunter) for food review and
               recommendation using Django, PostgreSQL, and React
             </li>
             <li>
-              Built LSTM and BERT deep learning models using TensorFlow/Keras
-              and Yelp dataset, achieving promising performances of 66.76% and
-              70.52% respectively on the fine-grained sentiment analysis of food
-              reviews
-            </li>
-            <li>
-              Researched and implemented a Part-of-Speech (POS) algorithm for
-              review tag generation by extracting adjective-noun pairs from food
-              reviews with an accuracy of nearly 95%
-            </li>
-            <li>
-              Created a Solr-based information retrieval system for semantic
-              food search by utilizing BERT embeddings to retrieve semantically
-              similar food reviews and products (Reproduction project for public
-              access:{" "}
+              Implemented different deep learning approaches to address the
+              problems of food review sentiment analysis, automatic review tag
+              generation, and{" "}
               <a
                 className="external__link"
                 href="https://github.com/tkhang1999/Solr-SBERT-semantic-search"
               >
-                Solr-SBERT-semantic-search
+                semantic food search
               </a>
-              )
-            </li>
-            <li>
-              Trained a RankNet model, a Learning To Rank neural network model,
-              for the re-ranking of food search results, outperforming classical
-              text retrieval methods (BM25 and tf-idf) by between 29% and 46%
             </li>
             <li>
               Presented{" "}
@@ -63,7 +45,7 @@ const Projects = () => {
           </dl>
         </div>
 
-        <div className="projects__container bd-grid">
+        <div className="project__container bd-container">
           <div>
             <h3>COVID19 Status Chatbot</h3>
             <p>
@@ -71,18 +53,18 @@ const Projects = () => {
               <i>May 2020</i>
             </p>
           </div>
-          <dl>
+          <dl className="project__text">
             <li>
-              Created an interactive chatbot on multiple platforms to get
-              real-time COVID-19 status globally or in any country using
-              Node.js, Dialogflow (Google Cloud), and Heroku (Project link:{" "}
+              Created an interactive{" "}
               <a
                 className="external__link"
                 href="https://github.com/tkhang1999/COVID19-status-webhook"
               >
-                COVID19-status-webhook
-              </a>
-              )
+                chatbot
+              </a>{" "}
+              on multiple platforms to get real-time COVID-19 status globally or
+              in any country using Node.js, Dialogflow (Google Cloud), and
+              Heroku
             </li>
             <li>
               Invited to be a guest speaker at a Google Developer Groups (GDG)
@@ -92,7 +74,7 @@ const Projects = () => {
           </dl>
         </div>
 
-        <div className="projects__container bd-grid">
+        <div className="project__container bd-container">
           <div>
             <h3>Undergraduate Research Experience on CAmpus (URECA)</h3>
             <p>
@@ -100,11 +82,7 @@ const Projects = () => {
               <i>Aug 2018 - Jun 2019</i>
             </p>
           </div>
-          <dl>
-            <li>
-              Invited to join research-intensive URECA programme in NTU for
-              students with excellent academic standing
-            </li>
+          <dl className="project__text">
             <li>
               Developed web-based Automatic Programming Assessment System (APAS)
               to provide various coding practices (C, Python, and Java) and
@@ -115,12 +93,6 @@ const Projects = () => {
               Initiated and led a team of 3 to create mobile-web Automatic
               Relationship Recommendation System (NTUpartner) to connect people
               and recommend new friends in NTU
-            </li>
-            <li>
-              Implemented machine learning and NLP approaches for friend
-              matching algorithms, such as Word2Vec embedding model, to compare
-              and match user profiles based on textual data and their cosine
-              similarity
             </li>
           </dl>
         </div>
