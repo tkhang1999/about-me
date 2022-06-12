@@ -4,7 +4,7 @@ const NavBar = (props) => {
   const menuClassName = props.isMenuOpen ? "nav__menu show" : "nav__menu";
 
   return (
-    <nav className="nav bd-grid">
+    <nav className="nav bd-container bd-grid">
       <div>
         <a href="#home" className="nav__logo">
           Khang Le

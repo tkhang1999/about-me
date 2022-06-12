@@ -3,7 +3,7 @@ const Work = () => {
     <section className="work section" id="work">
       <h2 className="section-title">Work Experience</h2>
       <div className="work__list">
-        <div className="work__container bd-grid">
+        <div className="work__container bd-container">
           <div>
             <h3>
               <a
@@ -18,7 +18,7 @@ const Work = () => {
               <i>Jul 2021 - Present</i>
             </p>
           </div>
-          <dl>
+          <dl className="work__text">
             <li>
               Work concurrently in Connectivity and Futures Client Technology
               platforms of Listed Clearing Department under Global Markets
@@ -27,8 +27,8 @@ const Work = () => {
             <li>
               Maintain various in-house clearing applications with external
               connectivity to support the derivatives clearing business of
-              millions of trades from clients and clearing houses using Java and
-              Spring Boot
+              millions of trades from clients and clearing houses using Java,
+              Docker, and Kubernetes
             </li>
             <li>
               Develop full-stack web dashboards for Prime Services in Marquee as
@@ -39,7 +39,7 @@ const Work = () => {
           </dl>
         </div>
 
-        <div className="work__container bd-grid">
+        <div className="work__container bd-container">
           <div>
             <h3>
               <a
@@ -54,7 +54,7 @@ const Work = () => {
               <i>Jul 2020 - Aug 2020</i>
             </p>
           </div>
-          <dl>
+          <dl className="work__text">
             <li>
               Built a full-stack web dashboard for memory usage monitoring of
               multiple applications and concurrent processes running in the firm
@@ -67,7 +67,7 @@ const Work = () => {
           </dl>
         </div>
 
-        <div className="work__container bd-grid">
+        <div className="work__container bd-container">
           <div>
             <h3>
               <a className="external__link" href="https://www.paypal.com/">
@@ -79,7 +79,7 @@ const Work = () => {
               <i>Aug 2019 - Dec 2019</i>
             </p>
           </div>
-          <dl>
+          <dl className="work__text">
             <li>
               Designed and worked on multiple RESTful web services in the
               Compliance platform using Java Spring Boot
@@ -96,7 +96,7 @@ const Work = () => {
           </dl>
         </div>
 
-        <div className="work__container bd-grid">
+        <div className="work__container bd-container">
           <div>
             <h3>
               <a className="external__link" href="https://noviscient.com/">
@@ -115,7 +115,7 @@ const Work = () => {
               <i>May 2019 - Aug 2019</i>
             </p>
           </div>
-          <dl>
+          <dl className="work__text">
             <li>
               Built a full-stack web application that gives investors and alpha
               partners access to portfolio creation and monitoring tools using
@@ -129,7 +129,7 @@ const Work = () => {
           </dl>
         </div>
 
-        <div className="work__container bd-grid">
+        <div className="work__container bd-container">
           <div>
             <h3>
               <a className="external__link" href="https://www.ackcio.com/">
@@ -141,7 +141,7 @@ const Work = () => {
               <i>May 2018 - Aug 2018</i>
             </p>
           </div>
-          <dl>
+          <dl className="work__text">
             <li>
               Developed a multi-threaded software running on Raspberry Pi to
               concurrently read and transmit real-time serial data for wireless
