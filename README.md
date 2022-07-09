@@ -26,3 +26,8 @@ $ npm run deploy
 ```
 $ npm run test:coverage
 ```
+
+## References
+
+- [Stylings](https://github.com/bedimcode/portfolio-responsive-complete)
+- [Deployment](https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-react-app-with-github-pages-and-codecov-4hnp)
