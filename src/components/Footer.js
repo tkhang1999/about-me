@@ -16,7 +16,7 @@ const Footer = () => {
           <i className="bx bxl-github"></i>
         </a>
       </div>
-      <p>&#169; 2021 created by Khang Le</p>
+      <p>&#169; 2021 handcrafted by Khang Le</p>
     </footer>
   );
 };
