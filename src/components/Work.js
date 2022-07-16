@@ -20,19 +20,23 @@ const Work = () => {
           </div>
           <dl className="work__text">
             <li>
-              Work concurrently in Connectivity and Futures Client Technology
-              platforms of Listed Clearing Department under Global Markets
-              Division
+              Work in Connectivity and Futures Client Technology platforms of
+              Listed Clearing Department under Global Markets Division
             </li>
             <li>
               Maintain various in-house clearing applications with external
               connectivity to support the derivatives clearing business of
-              millions of trades from clients and clearing houses using Java,
-              Docker, and Kubernetes
+              millions of trades and orders using Java, React, and Kubernetes
             </li>
             <li>
-              Develop full-stack web dashboards for Prime Services in Marquee as
-              part of a digital strategy to help hedge funds manage risk,
+              Develop full-stack web dashboards for Prime Services in{" "}
+              <a
+                className="external__link"
+                href="https://marquee.gs.com/welcome/products/prime-services"
+              >
+                GS Marquee
+              </a>{" "}
+              as part of a digital strategy to help hedge funds manage risk,
               monitor portfolios, maintain liquidity, and build businesses using
               Java and React
             </li>
