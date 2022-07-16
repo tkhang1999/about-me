@@ -19,8 +19,9 @@ const scrollReveal = () => {
 
   // reveal home section at first load
   sr.reveal(".home__title", {});
-  sr.reveal(".home__button", { delay: 200 });
-  sr.reveal(".home__social-icon", { delay: 400, interval: 200 });
+  sr.reveal(".home__content", { delay: 200 });
+  sr.reveal(".home__button", { delay: 400 });
+  sr.reveal(".home__social-icon", { delay: 600, interval: 200 });
 };
 
 const App = () => {
