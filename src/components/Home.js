@@ -5,12 +5,12 @@ const Home = () => {
     <section className="home bd-container bd-grid" id="home">
       <div>
         <div className="home__data">
-          <h1 className="home__title">
-            Hi,
-            <br />
-            I'm <span className="home__title-color">Khang</span>.<br />A
-            Computer Science Enthusiast
-          </h1>
+          <div className="home__intro">
+            <h1 className="home__title">
+              Hi, I'm <span className="home__title-color">Khang</span>
+            </h1>
+            <p className="home__content">A Computer Science Enthusiast</p>
+          </div>
           <a href="mailto:tkhang1999@gmail.com" className="home__button">
             Contact
           </a>

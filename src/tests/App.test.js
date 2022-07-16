@@ -37,7 +37,7 @@ describe("test App component", () => {
     shallow(<App />);
 
     expect(ScrollReveal).toHaveBeenCalledTimes(1);
-    expect(mockReveal).toHaveBeenCalledTimes(3);
+    expect(mockReveal).toHaveBeenCalledTimes(4);
   });
 
   test("clicks main should close the nav menu if it is open", () => {
