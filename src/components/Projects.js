@@ -84,14 +84,14 @@ const Projects = () => {
           </div>
           <dl className="project__text">
             <li>
-              Developed web-based Automatic Programming Assessment System (APAS)
-              to provide various coding practices (C, Python, and Java) and
-              automatic code testing and grading for students in Data Structures
-              course using Django
+              Developed a web-based automatic programming assessment system
+              (APAS) using Django that can support automatic code testing,
+              grading, and plagiarism checking for multiple programming
+              languages (C, Python, Java)
             </li>
             <li>
-              Initiated and led a team of 3 to create mobile-web Automatic
-              Relationship Recommendation System (NTUpartner) to connect people
+              Initiated and led a team of 3 to create a mobile-web automatic
+              relationship recommendation system (NTUpartner) to connect people
               and recommend new friends in NTU
             </li>
           </dl>

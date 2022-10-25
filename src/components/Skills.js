@@ -53,7 +53,7 @@ const Skills = () => {
           <div className="skills__data">
             <div className="skills__names">
               <i className="bx bx-code skills__icon"></i>
-              <span className="skills__name">Web Full-stack Development</span>
+              <span className="skills__name">Full-stack Development</span>
             </div>
           </div>
           <div className="skills__data">
