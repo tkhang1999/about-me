@@ -1,6 +1,6 @@
 # about-me
 
-![GitHub CI](https://img.shields.io/github/workflow/status/tkhang1999/about-me/CICD/master)
+![GitHub CI](https://img.shields.io/github/actions/workflow/status/tkhang1999/about-me/cicd.yml?branch=master)
 ![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/tkhang1999/about-me/master)
 ![CodeFactor Code Quality](https://img.shields.io/codefactor/grade/github/tkhang1999/about-me/master)
 
