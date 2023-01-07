@@ -18,12 +18,12 @@ const About = () => {
             University with a Bachelor of Engineering in Computer Science with
             Honours (Highest Distinction).
             <br />
-            <br />I have a great interest in doing research in the fields of
-            machine learning and software enginerring. To pursue my interests, I
-            have taken two elective focuses during college, one in Data Science
-            and Analytics and the other in High Performance Computing. In my
-            free time, I enjoy cooking, jogging, and playing table tennis and
-            badminton.
+            <br />
+            My interests are in machine learning and software enginerring. To
+            pursue them, I have taken two elective focuses during college, one
+            in Data Science and Analytics and the other in High Performance
+            Computing. In my free time, I enjoy cooking, jogging, and playing
+            table tennis and badminton.
           </p>
         </div>
       </div>
