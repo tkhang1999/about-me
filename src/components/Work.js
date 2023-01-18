@@ -20,13 +20,10 @@ const Work = () => {
           </div>
           <dl className="work__text">
             <li>
-              Work in Connectivity and Futures Client Technology platforms of
-              Listed Clearing Department under Global Markets Division
-            </li>
-            <li>
-              Maintain various in-house clearing applications with external
-              connectivity to support the derivatives clearing business of
-              millions of trades and orders using Java, React, and Kubernetes
+              Maintain various in-house applications covering external
+              connectivity and post-trade allocations to support the listed
+              derivatives clearing business of millions of trades using Java,
+              Spring, and React
             </li>
             <li>
               Develop full-stack web dashboards for Prime Services in{" "}
@@ -36,9 +33,13 @@ const Work = () => {
               >
                 GS Marquee
               </a>{" "}
-              as part of a digital strategy to help hedge funds manage risk,
-              monitor portfolios, maintain liquidity, and build businesses using
-              Java and React
+              to help hedge funds manage risk, monitor portfolios, maintain
+              liquidity, and build businesses using Java and React
+            </li>
+            <li>
+              Create and maintain fully automated CI/CD pipelines for Kubernetes
+              deployments as part of cloud enablement initiatives in the team
+              using ArgoCD and Terraform
             </li>
           </dl>
         </div>
