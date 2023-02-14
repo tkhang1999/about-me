@@ -22,11 +22,10 @@ const Work = () => {
             <li>
               Maintain various in-house applications covering external
               connectivity and post-trade allocations to support the listed
-              derivatives clearing business of millions of trades using Java,
-              Spring, and React
+              derivatives clearing business of millions of trades
             </li>
             <li>
-              Develop full-stack web dashboards for Prime Services in{" "}
+              Develop full-stack web dashboards for client reporting services on{" "}
               <a
                 className="external__link"
                 href="https://marquee.gs.com/welcome/products/prime-services"
@@ -34,10 +33,10 @@ const Work = () => {
                 GS Marquee
               </a>{" "}
               to help hedge funds manage risk, monitor portfolios, maintain
-              liquidity, and build businesses using Java and React
+              liquidity, and build businesses
             </li>
             <li>
-              Create and maintain fully automated CI/CD pipelines for Kubernetes
+              Build and manage fully automated CI/CD pipelines for Kubernetes
               deployments as part of cloud enablement initiatives in the team
               using ArgoCD and Terraform
             </li>

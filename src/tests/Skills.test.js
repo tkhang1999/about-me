@@ -10,6 +10,6 @@ describe("test Skills component", () => {
     expect(wrapper.find(".skills__subtitle").length).toEqual(1);
     expect(wrapper.find(".skills__text").length).toEqual(1);
     expect(wrapper.find(".skills__list").length).toEqual(2);
-    expect(wrapper.find(".skills__data").length).toEqual(8);
+    expect(wrapper.find(".skills__data").length).toEqual(6);
   });
 });
