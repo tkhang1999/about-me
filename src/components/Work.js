@@ -21,11 +21,11 @@ const Work = () => {
           <dl className="work__text">
             <li>
               Maintain various in-house applications covering external
-              connectivity and post-trade allocations to support the listed
-              derivatives clearing business of millions of trades
+              connectivity and post-trade allocations to support the Listed
+              Derivatives clearing business of millions of trades
             </li>
             <li>
-              Develop full-stack web dashboards for client reporting services on{" "}
+              Build full-stack web dashboards for client reporting services on{" "}
               <a
                 className="external__link"
                 href="https://marquee.gs.com/welcome/products/prime-services"
@@ -36,9 +36,10 @@ const Work = () => {
               liquidity, and build businesses
             </li>
             <li>
-              Build and manage fully automated CI/CD pipelines for Kubernetes
-              deployments as part of cloud enablement initiatives in the team
-              using ArgoCD and Terraform
+              Enhance post-trade allocation flows with distributed processing,
+              automatic error resolution, and real-time missing allocation
+              report for more than 1,000 active clients across 50 markets
+              globally
             </li>
           </dl>
         </div>
