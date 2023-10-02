@@ -14,8 +14,8 @@ const Work = () => {
               </a>
             </h3>
             <p>
-              Analyst (Software Engineer) <br />
-              <i>Jul 2021 - Present</i>
+              Software Engineer <br />
+              <i>Jul 2021 - Aug 2023</i>
             </p>
           </div>
           <dl className="work__text">
@@ -38,8 +38,7 @@ const Work = () => {
             <li>
               Enhance post-trade allocation flows with distributed processing,
               automatic error resolution, and real-time missing allocation
-              report for more than 1,000 active clients across 50 markets
-              globally
+              report for 1,000+ active clients across 50 markets globally
             </li>
           </dl>
         </div>
@@ -110,11 +109,8 @@ const Work = () => {
             </h3>
             <p>
               Junior Engineer (Apprenticeship under{" "}
-              <a
-                className="external__link"
-                href="https://www.sginnovate.com/talentprogrammes"
-              >
-                SGInnovate Summation Programme
+              <a className="external__link" href="https://www.sginnovate.com/">
+                SGInnovate
               </a>
               ) <br />
               <i>May 2019 - Aug 2019</i>
