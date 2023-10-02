@@ -12,12 +12,15 @@ const About = () => {
         <div>
           <h2 className="about__subtitle">People call me Khang</h2>
           <p className="about__text">
-            My name is Khang Le and I am currently working as a software
-            engineer with great focus in developing full-stack applications and
-            exploring new technologies. I graduated from Nanyang Technological
-            University with a Bachelor of Engineering in Computer Science with
-            Honours (Highest Distinction). In my free time, I enjoy cooking,
-            jogging, and playing table tennis and badminton.
+            My name is Khang Le and I am currently a Master's (Thesis) student
+            at Simon Fraser University (SFU) with a research interest in
+            software testing and verification.
+            <br />
+            <br />
+            Previously, I graduated from Nanyang Technological University (NTU)
+            with a Bachelor degree in Computer Science with Honours (Highest
+            Distinction). In my free time, I enjoy cooking, jogging, and playing
+            table tennis and badminton.
           </p>
         </div>
       </div>
