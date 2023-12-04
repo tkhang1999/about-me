@@ -20,12 +20,12 @@ const Work = () => {
           </div>
           <dl className="work__text">
             <li>
-              Maintain various in-house applications covering external
-              connectivity and post-trade allocations to support the Listed
-              Derivatives clearing business of millions of trades
+              Maintained various in-house applications covering external
+              connectivity for the Listed Derivatives clearing business of
+              millions of trades
             </li>
             <li>
-              Build full-stack web dashboards for client reporting services on{" "}
+              Built full-stack web dashboards for client reporting services on{" "}
               <a
                 className="external__link"
                 href="https://marquee.gs.com/welcome/products/prime-services"
@@ -36,9 +36,9 @@ const Work = () => {
               liquidity, and build businesses
             </li>
             <li>
-              Enhance post-trade allocation flows with distributed processing,
-              automatic error resolution, and real-time missing allocation
-              report for 1,000+ active clients across 50 markets globally
+              Enhanced client order flow with horizontal scaling and distributed
+              processing using Kafka to support more than 1,000 active clients
+              across 50 markets globally
             </li>
           </dl>
         </div>
@@ -62,11 +62,11 @@ const Work = () => {
             <li>
               Built a full-stack web dashboard for memory usage monitoring of
               multiple applications and concurrent processes running in the firm
-              using Java Spring Boot and React
+              using Java, Spring Boot, Kafka, and React
             </li>
             <li>
-              Collaborated with senior engineers to deploy the dashboard
-              successfully and present results to the global team
+              Worked with senior engineers to deploy the dashboard successfully
+              and present results to the global team
             </li>
           </dl>
         </div>
@@ -85,17 +85,19 @@ const Work = () => {
           </div>
           <dl className="work__text">
             <li>
-              Designed and worked on multiple RESTful web services in the
-              Compliance platform using Java Spring Boot
+              Designed and developed multiple RESTful web services in the
+              Compliance platform to fulfill regulatory and Know Your Customer
+              (KYC) requirements using Java and Spring Boot
             </li>
             <li>
-              Developed machine learning models that detect and reconcile
-              regulatory breaches based on partial account data
+              Built machine learning models, namely Random Forest and SVM, to
+              detect regulatory breaches based on partial account data present
+              during system failures
             </li>
             <li>
-              Researched and proposed the open-source Conflict-free Replicated
-              Data Type (CRDT) Counter designs in Java that support distributed
-              systems and focus on eventual consistency
+              Researched and developed the open-source Conflict-free Replicated
+              Data Type (CRDT) designs in Java that support distributed systems
+              and focus on strong eventual consistency
             </li>
           </dl>
         </div>
@@ -149,8 +151,8 @@ const Work = () => {
               construction monitoring using Python and SQLite
             </li>
             <li>
-              Worked with senior engineers to deploy the software successfully
-              to construction sites in Singapore and Korea
+              Collaborated with senior engineers to deploy the software
+              successfully to construction sites in Singapore and Korea
             </li>
           </dl>
         </div>
