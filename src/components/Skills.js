@@ -7,7 +7,7 @@ const Skills = () => {
         <h2 className="skills__subtitle">Profesional Skills</h2>
         <p className="skills__text">
           The technology stack that I'm currently working on includes, but not
-          limited to, Java, React, and Kubernetes.
+          limited to, Java, Python, TypeScript, React, and Docker.
         </p>
         <div className="skills__list">
           <div className="skills__data">
