@@ -371,8 +371,7 @@ body.dark__theme {
   gap: var(--mb-6);
 }
 .project__text {
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+  margin: var(--mb-3);
 }
 .work__grid {
   display: grid;
@@ -382,6 +381,7 @@ body.dark__theme {
   width: 60px;
   margin: auto;
 }
+.work__title,
 .work__text {
   margin: var(--mb-2);
 }
