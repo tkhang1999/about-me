@@ -47,7 +47,7 @@ const Work = () => {
         <div className="work__container work__grid">
           <img className="work__img" src={paypalImg} alt="paypal-logo" />
           <p className="work__text">
-            Software Engineering Inter @{" "}
+            Software Engineering Intern @{" "}
             <a className="external__link" href="https://www.paypal.com/">
               PayPal
             </a>{" "}
