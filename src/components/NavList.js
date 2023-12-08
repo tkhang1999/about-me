@@ -5,8 +5,8 @@ export const navItems = [
   { key: "#home", value: "Home" },
   { key: "#about", value: "About" },
   { key: "#skills", value: "Skills" },
-  { key: "#projects", value: "Projects" },
   { key: "#work", value: "Work" },
+  { key: "#projects", value: "Projects" },
 ];
 
 const NavList = () => {
