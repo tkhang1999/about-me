@@ -8,6 +8,6 @@ describe("test Work component", () => {
     expect(wrapper.find("#work").exists()).toBeTruthy();
     expect(wrapper.find(".section-title").length).toEqual(1);
     expect(wrapper.find(".work__list").length).toEqual(1);
-    expect(wrapper.find(".work__container").length).toEqual(5);
+    expect(wrapper.find(".work__container").length).toEqual(6);
   });
 });
