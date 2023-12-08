@@ -26,7 +26,7 @@ const Work = () => {
             languages, specifically symbolic execution and formal verification.
             <br />
             <br />
-            <i>Tech stack: Rust, Dafny, Linux</i>
+            <i>Tech stack: Rust, Dafny, C++, Linux</i>
           </p>
         </div>
 
@@ -95,8 +95,8 @@ const Work = () => {
             </p>
           </div>
           <p className="work__text">
-            Worked on multiple RESTful web services in the Compliance platform
-            and developed machine learning models to detect regulatory breaches.
+            Developed multiple RESTful web services in the Compliance platform
+            and built machine learning models to detect regulatory breaches.
             <br />
             <br />
             <i>Tech stack: Java, Python, Spring Boot, SQL</i>
@@ -121,7 +121,8 @@ const Work = () => {
           </div>
           <p className="work__text">
             Built a full-stack web application that gives investors and alpha
-            partners access to portfolio creation and monitoring tools.
+            partners access to portfolio creation and investment management
+            tools.
             <br />
             <br />
             <i>Tech stack: Python, Django, jQuery, Docker</i>
@@ -141,9 +142,9 @@ const Work = () => {
             </p>
           </div>
           <p className="work__text">
-            Developed a multi-threaded software running on
-            Raspberry Pi to concurrently read and transmit serial data for
-            real-time construction monitoring. <br />
+            Developed a multi-threaded software running on Raspberry Pi to
+            concurrently read and transmit serial data for real-time
+            construction monitoring. <br />
             <br />
             <i>Tech stack: Python, SQL, Linux</i>
           </p>
