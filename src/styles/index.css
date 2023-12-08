@@ -300,10 +300,14 @@ body.dark__theme {
 
 /* ===== SKILLS =====*/
 .skills__container {
-  row-gap: 2rem;
+  row-gap: var(--mb-3);
 }
 .skills__subtitle {
   text-align: center;
+}
+.skills__list {
+  display: grid;
+  gap: var(--mb-3);
 }
 .skills__data {
   display: flex;
@@ -312,7 +316,6 @@ body.dark__theme {
   position: relative;
   font-weight: var(--font-semi);
   padding: 0.5rem 1rem;
-  margin-bottom: var(--mb-2);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   text-align: left;
@@ -355,7 +358,6 @@ body.dark__theme {
 /* ===== PROJECTS & WORK =====*/
 .project__container,
 .work__container {
-  margin-top: var(--mb-4);
   overflow: hidden;
   text-overflow: ellipsis;
   background: var(--container-color);
@@ -364,6 +366,40 @@ body.dark__theme {
   border-radius: 0.25rem;
   padding: 1em;
 }
+.project__list {
+  display: grid;
+  gap: var(--mb-6);
+}
+.project__text {
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+.work__grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.work__img {
+  width: 60px;
+  margin: auto;
+}
+.work__text {
+  margin: var(--mb-2);
+}
+.work__list {
+  display: grid;
+  gap: var(--mb-4);
+  grid-auto-rows: 1fr;
+}
+/* .work__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--mb-6);
+  justify-content: center;
+  margin-top: var(--mb-4)
+}
+.work__list > div {
+  width: 100%;
+} */
 
 /* ===== FOOTER =====*/
 .footer {
@@ -463,6 +499,13 @@ body.dark__theme {
   .skills__subtitle {
     text-align: initial;
   }
+
+  .work__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .work__list > div {
+    width: 45%;
+  } */
 }
 
 @media screen and (min-width: 1024px) {
@@ -472,10 +515,5 @@ body.dark__theme {
   }
   .home__img {
     right: 10%;
-  }
-  .project__text,
-  .work__text {
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
 }

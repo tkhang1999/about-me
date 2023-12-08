@@ -50,10 +50,10 @@ const App = () => {
         <About />
         {/* ===== SKILLS ===== */}
         <Skills />
-        {/* ===== PROJECTS ===== */}
-        <Projects />
         {/* ===== WORK ===== */}
         <Work />
+        {/* ===== PROJECTS ===== */}
+        <Projects />
       </main>
 
       {/* ===== FOOTER ===== */}

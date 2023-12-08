@@ -14,13 +14,14 @@ const About = () => {
           <p className="about__text">
             My name is Khang Le and I am currently a Master's (Thesis) student
             at Simon Fraser University (SFU) with a research interest in
-            software testing and verification.
+            software engineering and programming languages.
             <br />
             <br />
             Previously, I graduated from Nanyang Technological University (NTU)
-            with a Bachelor degree in Computer Science with Honours (Highest
-            Distinction). In my free time, I enjoy cooking, jogging, and playing
-            table tennis and badminton.
+            with a Bachelor's degree in Computer Science, followed by several
+            professional working experiences as a software engineer. In my free
+            time, I enjoy cooking, jogging, and playing table tennis and
+            badminton.
           </p>
         </div>
       </div>
