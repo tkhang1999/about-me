@@ -46,9 +46,9 @@ const Work = () => {
             </p>
           </div>
           <p className="work__text">
-            Maintained various in-house applications covering external
-            connectivity and post-trade allocations to support the listed
-            derivatives clearing business.
+            Developed full-stack web applications and microservices to
+            streamline the post-trade lifecycle in the derivatives clearing
+            business
             <br />
             <br />
             <i>

@@ -6,7 +6,7 @@ const NavBar = (props) => {
   return (
     <nav className="nav bd-container bd-grid">
       <div>
-        <a href="#home" className="nav__logo">
+        <a href="." className="nav__logo">
           Khang Le
         </a>
       </div>
