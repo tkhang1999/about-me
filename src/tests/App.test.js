@@ -1,6 +1,5 @@
 import { shallow } from "enzyme";
 import React from "react";
-import ScrollReveal from "scrollreveal";
 
 import App from "../App";
 import About from "../components/About";
@@ -10,14 +9,6 @@ import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Work from "../components/Work";
-
-// mock ScollReveal constructor and its method "reveal"
-const mockReveal = jest.fn();
-jest.mock("scrollreveal", () => {
-  return jest.fn().mockImplementation(() => {
-    return { reveal: mockReveal };
-  });
-});
 
 describe("test App component", () => {
   test("renders App correctly", () => {
@@ -30,14 +21,6 @@ describe("test App component", () => {
     expect(wrapper.find(Projects).exists()).toBeTruthy();
     expect(wrapper.find(Work).exists()).toBeTruthy();
     expect(wrapper.find(Footer).exists()).toBeTruthy();
-  });
-
-  test("constructs ScrollReveal correctly", () => {
-    jest.spyOn(React, "useEffect").mockImplementation((f) => f());
-    shallow(<App />);
-
-    expect(ScrollReveal).toHaveBeenCalledTimes(1);
-    expect(mockReveal).toHaveBeenCalledTimes(4);
   });
 
   test("clicks main should close the nav menu if it is open", () => {
