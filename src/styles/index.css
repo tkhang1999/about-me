@@ -368,10 +368,11 @@ body.dark__theme {
 }
 .project__list {
   display: grid;
-  gap: var(--mb-6);
+  gap: var(--mb-3);
 }
 .project__text {
-  margin: var(--mb-3);
+  font-size: var(--normal-font-size);
+  /* margin: var(--mb-3); */
 }
 .work__grid {
   display: grid;
