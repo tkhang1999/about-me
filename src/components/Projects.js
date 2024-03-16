@@ -5,59 +5,73 @@ const Projects = () => {
       <div className="project__list">
         <div className="project__container bd-container">
           <div>
-            <h3>Machine Learning for Food Review and Recommendation</h3>
-            <i>Jun 2020 - May 2021</i>
+            <h3>
+              A Study of Vulnerability Repair in JavaScript Programs with Large
+              Language Models
+            </h3>
           </div>
-          <dl className="project__text">
-            <li>
-              Developed a full-stack website for food review and recommendation
-              using Django, PostgreSQL, and React
-            </li>
-            <li>
-              Implemented various deep learning approaches, namely BERT and
-              LSTM, to address different problems in food review sentiment
-              analysis, automatic review tag generation, and semantic food
-              search [
-              <a
-                className="external__link"
-                href="https://github.com/tkhang1999/Solr-SBERT-semantic-search"
-              >
-                demo
-              </a>
-              ]
-            </li>
-            <li>
-              Presented findings at International Student Conference on
-              Artificial Intelligence (STCAI) 2021 [
-              <a
-                className="external__link"
-                href="https://arxiv.org/abs/2201.10978"
-              >
-                paper
-              </a>
-              ]
-            </li>
-          </dl>
+          <p className="project__text">
+            <u>Tan Khang Le</u>, Saba Alimadadi, and Steven Y. Ko; in{" "}
+            <i>
+              Companion Proceedings of the ACM Web Conference 2024 (WWW '24
+              Companion)
+            </i>
+            , Singapore, 2024. [
+            <a
+              className="external__link"
+              href="https://www2024.thewebconf.org/accepted/short-papers/"
+            >
+              link
+            </a>
+            ]
+          </p>
         </div>
-
         <div className="project__container bd-container">
           <div>
-            <h3>Undergraduate Research Experience on CAmpus (URECA) - NTU</h3>
-            <i>Aug 2018 - Jun 2019</i>
+            <h3>
+              Concolic Execution for Mid-level Intermediate Representation of
+              Rust Programs
+            </h3>
           </div>
-          <dl className="project__text">
-            <li>
-              Developed a web-based automatic programming assessment system
-              (APAS) using Django that can support automatic code testing,
-              grading, and plagiarism checking for multiple programming
-              languages (C, Python, Java)
-            </li>
-            <li>
-              Initiated and led a team of 3 to create a mobile-web automatic
-              relationship recommendation system (NTUpartner) to connect people
-              and recommend new friends in NTU
-            </li>
-          </dl>
+          <p className="project__text">
+            Mohammad Omidvar Tehrani, <u>Tan Khang Le</u>, Frédéric Tuong and
+            Steven Y. Ko; in <i>Fourth Rust Verification Workshop (RW2024)</i>,
+            Luxembourg, 2024. [
+            <a
+              className="external__link"
+              href="https://sites.google.com/view/rustverify2024"
+            >
+              link
+            </a>
+            ]
+          </p>
+        </div>
+        <div className="project__container bd-container">
+          <div>
+            <h3>Machine Learning for Food Review and Recommendation</h3>
+          </div>
+          <p className="project__text">
+            <u>Tan Khang Le</u> and Siu Cheung Hui; in{" "}
+            <i>
+              International Student Conference on Artificial Intelligence
+              (STCAI)
+            </i>
+            , Singapore, 2021. [
+            <a
+              className="external__link"
+              href="https://arxiv.org/abs/2201.10978"
+            >
+              paper
+            </a>
+            ] [
+            <a
+              className="external__link"
+              href="https://github.com/tkhang1999/Solr-SBERT-semantic-search"
+            >
+              demo
+            </a>
+            ]
+          </p>
         </div>
       </div>
     </section>
