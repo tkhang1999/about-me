@@ -19,9 +19,9 @@ const Projects = () => {
             , Singapore, 2024. [
             <a
               className="external__link"
-              href="https://www2024.thewebconf.org/accepted/short-papers/"
+              href="https://arxiv.org/abs/2403.13193"
             >
-              link
+              paper
             </a>
             ]
           </p>
