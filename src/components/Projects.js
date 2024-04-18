@@ -11,7 +11,7 @@ const Projects = () => {
             </h3>
           </div>
           <p className="project__text">
-            <u>Tan Khang Le</u>, Saba Alimadadi, and Steven Y. Ko; in{" "}
+            <u>Tan Khang Le</u>, Saba Alimadadi and Steven Y. Ko; in{" "}
             <i>
               Companion Proceedings of the ACM Web Conference 2024 (WWW '24
               Companion)
