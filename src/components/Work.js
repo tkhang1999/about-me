@@ -22,8 +22,9 @@ const Work = () => {
             </p>
           </div>
           <p className="work__text">
-            Work on research projects in software engineering and programming
-            languages, specifically symbolic execution and formal verification.
+            Conduct research on concolic/symbolic execution for Rust, formal
+            verification of the L2CAP layer in Bluetooth, and automated program
+            repair using LLMs.
             <br />
             <br />
             <i>Tech stack: Rust, Dafny, C++, Linux</i>
@@ -48,7 +49,7 @@ const Work = () => {
           <p className="work__text">
             Developed full-stack web applications and microservices to
             streamline the post-trade lifecycle in the derivatives clearing
-            business
+            business.
             <br />
             <br />
             <i>

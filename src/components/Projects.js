@@ -11,7 +11,7 @@ const Projects = () => {
             </h3>
           </div>
           <p className="project__text">
-            <u>Tan Khang Le</u>, Saba Alimadadi and Steven Y. Ko; in{" "}
+            <u>Tan Khang Le</u>, Saba Alimadadi, and Steven Y. Ko; in{" "}
             <i>
               Companion Proceedings of the ACM Web Conference 2024 (WWW '24
               Companion)
@@ -34,9 +34,10 @@ const Projects = () => {
             </h3>
           </div>
           <p className="project__text">
-            Mohammad Omidvar Tehrani, <u>Tan Khang Le</u>, Frédéric Tuong and
-            Steven Y. Ko; in <i>Fourth Rust Verification Workshop (RW2024)</i>,
-            Luxembourg, 2024. [
+            Mohammad Omidvar Tehrani, <u>Tan Khang Le</u>, Frédéric Tuong, Marco
+            Gaboardi, and Steven Y. Ko; in{" "}
+            <i>Fourth Rust Verification Workshop (RW2024)</i>, Luxembourg, 2024.
+            [
             <a
               className="external__link"
               href="https://sites.google.com/view/rustverify2024"
