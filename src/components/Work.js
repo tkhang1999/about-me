@@ -13,7 +13,7 @@ const Work = () => {
           <div className="work__grid">
             <img className="work__img" src={sfuImg} alt="sfu-logo" />
             <p className="work__title">
-              Graduate Research Assistant @{" "}
+              Research Assistant @{" "}
               <a className="external__link" href="https://www.sfu.ca/">
                 SFU
               </a>{" "}

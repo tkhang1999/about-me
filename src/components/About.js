@@ -10,7 +10,7 @@ const About = () => {
           <img src={aboutImg} alt="about" />
         </div>
         <div>
-          <h2 className="about__subtitle">People call me Khang</h2>
+          <h2 className="about__subtitle">Hi there!</h2>
           <p className="about__text">
             My name is Khang Le, and I am currently working as a Research
             Assistant at Simon Fraser University (SFU), focusing on projects
