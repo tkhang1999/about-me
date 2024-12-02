@@ -13,7 +13,6 @@ const App = () => {
 
   const onClick = () => {
     if (isMenuOpen) {
-      console.log("close menu");
       setIsMenuOpen(false);
     }
   };

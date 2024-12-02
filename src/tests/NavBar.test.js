@@ -2,7 +2,6 @@ import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 import NavBar from "../components/NavBar";
-import NavList from "../components/NavList";
 
 describe("test NavBar component", () => {
   let mockSetIsMenuOpen;
