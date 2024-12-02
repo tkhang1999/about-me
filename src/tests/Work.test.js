@@ -1,13 +1,13 @@
-import { shallow } from "enzyme";
+import { render, screen } from "@testing-library/react";
 import Work from "../components/Work";
 
 describe("test Work component", () => {
   test("renders Work correctly", () => {
-    const wrapper = shallow(<Work />);
+    render(<Work />);
 
-    expect(wrapper.find("#work").exists()).toBeTruthy();
-    expect(wrapper.find(".section-title").length).toEqual(1);
-    expect(wrapper.find(".work__list").length).toEqual(1);
-    expect(wrapper.find(".work__container").length).toEqual(6);
+    expect(screen.getByTestId("work")).toBeTruthy();
+    expect(screen.getAllByRole("heading").length).toEqual(1);
+    expect(screen.getAllByRole("link").length).toEqual(6);
+    expect(screen.getAllByRole("paragraph").length).toEqual(12);
   });
 });

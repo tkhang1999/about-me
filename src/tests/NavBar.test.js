@@ -1,49 +1,43 @@
-import { shallow } from "enzyme";
 import React from "react";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 import NavBar from "../components/NavBar";
 import NavList from "../components/NavList";
 
 describe("test NavBar component", () => {
-  let mockIsMenuOpen;
   let mockSetIsMenuOpen;
 
   beforeEach(() => {
-    mockIsMenuOpen = false;
     mockSetIsMenuOpen = jest.fn();
   });
 
   test("renders NavBar correctly", () => {
-    const wrapper = shallow(
-      <NavBar isMenuOpen={mockIsMenuOpen} setIsMenuOpen={mockSetIsMenuOpen} />
-    );
+    render(<NavBar isMenuOpen={false} setIsMenuOpen={mockSetIsMenuOpen} />);
 
-    expect(wrapper.find("nav").exists()).toBeTruthy();
-    expect(wrapper.find(".nav__menu").exists()).toBeTruthy();
-    expect(wrapper.find(".show").exists()).toBeFalsy();
-    expect(wrapper.find(NavList).exists()).toBeTruthy();
-    expect(wrapper.find(".nav__logo").length).toEqual(1);
-    expect(wrapper.find(".nav__toggle").length).toEqual(1);
+    expect(screen.getByTestId("nav-bar")).toBeTruthy();
+    expect(screen.getByTestId("nav-list")).toBeTruthy();
+    expect(screen.getByTestId("nav-toggle")).toBeTruthy();
+
+    expect(
+      !screen.getByTestId("nav-list").classList.contains("show"),
+    ).toBeTruthy();
   });
 
   test("renders NavBar correctly with open menu", () => {
-    mockIsMenuOpen = true;
-    const wrapper = shallow(
-      <NavBar isMenuOpen={mockIsMenuOpen} setIsMenuOpen={mockSetIsMenuOpen} />
-    );
+    render(<NavBar isMenuOpen={true} setIsMenuOpen={mockSetIsMenuOpen} />);
 
-    expect(wrapper.find("nav").exists()).toBeTruthy();
-    expect(wrapper.find(".nav__menu").exists()).toBeTruthy();
-    expect(wrapper.find(".show").exists()).toBeTruthy();
-    expect(wrapper.find(NavList).exists()).toBeTruthy();
+    expect(screen.getByTestId("nav-bar")).toBeTruthy();
+    expect(screen.getByTestId("nav-list")).toBeTruthy();
+    expect(screen.getByTestId("nav-toggle")).toBeTruthy();
+    expect(
+      screen.getByTestId("nav-list").classList.contains("show"),
+    ).toBeTruthy();
   });
 
   test("clicks nav toggle", () => {
-    const wrapper = shallow(
-      <NavBar isMenuOpen={mockIsMenuOpen} setIsMenuOpen={mockSetIsMenuOpen} />
-    );
-    wrapper.find("#nav-toggle").simulate("click");
+    render(<NavBar isMenuOpen={false} setIsMenuOpen={mockSetIsMenuOpen} />);
 
-    expect(mockSetIsMenuOpen).toHaveBeenCalledWith(!mockIsMenuOpen);
+    fireEvent.click(screen.getByTestId("nav-toggle"));
+    expect(mockSetIsMenuOpen).toHaveBeenCalledWith(true);
   });
 });

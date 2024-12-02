@@ -1,14 +1,12 @@
-import { shallow } from "enzyme";
+import { render, screen } from "@testing-library/react";
 import About from "../components/About";
 
 describe("test About component", () => {
   test("renders About correctly", () => {
-    const wrapper = shallow(<About />);
+    render(<About />);
 
-    expect(wrapper.find("#about").exists()).toBeTruthy();
-    expect(wrapper.find(".about__container").length).toEqual(1);
-    expect(wrapper.find(".about__img").length).toEqual(1);
-    expect(wrapper.find(".about__subtitle").length).toEqual(1);
-    expect(wrapper.find(".about__text").length).toEqual(1);
+    expect(screen.getByTestId("about")).toBeTruthy();
+    expect(screen.getAllByRole("img").length).toEqual(1);
+    expect(screen.getAllByRole("paragraph").length).toEqual(1);
   });
 });

@@ -1,13 +1,12 @@
-import { shallow } from "enzyme";
+import { render, screen } from "@testing-library/react";
 import Footer from "../components/Footer";
 
 describe("test Footer component", () => {
   test("renders Footer correctly", () => {
-    const wrapper = shallow(<Footer />);
+    render(<Footer />);
 
-    expect(wrapper.find("footer").exists()).toBeTruthy();
-    expect(wrapper.find(".footer__title").length).toEqual(1);
-    expect(wrapper.find(".footer__social").length).toEqual(1);
-    expect(wrapper.find(".footer__icon").length).toEqual(3);
+    expect(screen.getByTestId("footer")).toBeTruthy();
+    expect(screen.getAllByRole("paragraph").length).toEqual(2);
+    expect(screen.getAllByRole("link").length).toEqual(3);
   });
 });

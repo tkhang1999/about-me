@@ -4,15 +4,12 @@
   "private": true,
   "homepage": "https://tkhang1999.github.io/about-me/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-reveal": "^1.2.2",
+    "react": "^18.3.1",
+    "react-awesome-reveal": "^4.2.14",
+    "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
     "react-toggle": "^4.1.2",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,23 +41,22 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "gh-pages": "^5.0.0",
-    "prettier": "2.4.1",
-    "react-test-renderer": "^16.14.0",
-    "cheerio": "=1.0.0-rc.3"
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "babel-jest": "^29.7.0",
+    "gh-pages": "^6.2.0",
+    "jest": "^27.5.1",
+    "prettier": "3.4.1",
+    "react-test-renderer": "^18.3.1"
   },
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/tests/fileMock.js",
       "\\.(css|less)$": "<rootDir>/src/tests/styleMock.js"
     },
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/tests/setup-jest.js",
-      "<rootDir>/src/tests/setupTests.js"
-    ],
     "testEnvironment": "jsdom"
   }
 }
