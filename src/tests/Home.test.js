@@ -1,18 +1,16 @@
-import { shallow } from "enzyme";
+import "react-intersection-observer/test-utils";
+
+import { render, screen } from "@testing-library/react";
 import Home from "../components/Home";
 
 describe("test Home component", () => {
   test("renders Home correctly", () => {
-    const wrapper = shallow(<Home />);
+    render(<Home />);
 
-    expect(wrapper.find("#home").exists()).toBeTruthy();
-    expect(wrapper.find(".home__data").length).toEqual(1);
-    expect(wrapper.find(".home__intro").length).toEqual(1);
-    expect(wrapper.find(".home__title").length).toEqual(1);
-    expect(wrapper.find(".home__content").length).toEqual(1);
-    expect(wrapper.find(".home__button").length).toEqual(1);
-    expect(wrapper.find(".home__social").length).toEqual(1);
-    expect(wrapper.find(".home__social-icon").length).toEqual(2);
-    expect(wrapper.find(".home__img").length).toEqual(1);
+    expect(screen.getByTestId("home")).toBeTruthy();
+    expect(screen.getAllByRole("heading").length).toEqual(1);
+    expect(screen.getAllByRole("paragraph").length).toEqual(1);
+    expect(screen.getAllByRole("link").length).toEqual(3);
+    expect(screen.getAllByRole("presentation").length).toEqual(1);
   });
 });

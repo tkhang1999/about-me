@@ -1,16 +1,16 @@
-import { shallow } from "enzyme";
 import React from "react";
-import Toggle from "react-toggle";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 
 import NavList, { navItems } from "../components/NavList";
 
 describe("test NavList component", () => {
   test("renders NavList correctly", () => {
-    const wrapper = shallow(<NavList />);
+    render(<NavList />);
 
-    expect(wrapper.find(".nav__list").exists()).toBeTruthy();
-    expect(wrapper.find(".nav__item").length).toEqual(navItems.length);
-    expect(wrapper.find(Toggle).length).toEqual(1);
+    expect(screen.getByRole("list")).toBeTruthy();
+    expect(screen.getAllByRole("listitem").length).toEqual(navItems.length + 1);
+    expect(screen.getAllByRole("link").length).toEqual(navItems.length);
+    expect(screen.getAllByRole("checkbox").length).toBeTruthy();
   });
 
   test("sets theme at first render", () => {
@@ -24,8 +24,12 @@ describe("test NavList component", () => {
         .spyOn(window.localStorage.__proto__, "getItem")
         .mockImplementation(() => theme);
 
-      shallow(<NavList />);
+      render(<NavList />);
+
+      expect(mockSetIsDarkTheme).toHaveBeenCalledTimes(1);
       expect(mockSetIsDarkTheme).toHaveBeenCalledWith(theme === "dark");
+
+      cleanup();
     });
   });
 
@@ -34,13 +38,15 @@ describe("test NavList component", () => {
     jest
       .spyOn(React, "useState")
       .mockImplementation((initState) => [initState, mockSetItem]);
-    const firstItem = shallow(<NavList />)
-      .find(".nav__item")
-      .first()
-      .find("a");
-    firstItem.simulate("click");
 
-    expect(mockSetItem).toHaveBeenCalledWith(firstItem.prop("href"));
+    render(<NavList />);
+    mockSetItem.mockClear();
+
+    const firstItem = screen.getAllByRole("link")[0];
+    fireEvent.click(firstItem);
+
+    expect(mockSetItem).toHaveBeenCalledTimes(1);
+    expect(mockSetItem).toHaveBeenCalledWith(firstItem.attributes.href.value);
   });
 
   test("toggles light/dark theme", () => {
@@ -50,10 +56,15 @@ describe("test NavList component", () => {
       jest
         .spyOn(React, "useState")
         .mockImplementation(() => [mockIsDarkTheme, mockSetIsDarkTheme]);
-      const wrapper = shallow(<NavList />);
-      wrapper.find(Toggle).simulate("change");
 
+      render(<NavList />);
+      mockSetIsDarkTheme.mockClear();
+      fireEvent.click(screen.getByRole("checkbox"));
+
+      expect(mockSetIsDarkTheme).toHaveBeenCalledTimes(1);
       expect(mockSetIsDarkTheme).toHaveBeenCalledWith(!mockIsDarkTheme);
+
+      cleanup();
     });
   });
 });

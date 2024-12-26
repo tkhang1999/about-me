@@ -1,15 +1,18 @@
-import { shallow } from "enzyme";
+import { render, screen } from "@testing-library/react";
 import Skills from "../components/Skills";
 
 describe("test Skills component", () => {
   test("renders Skills correctly", () => {
-    const wrapper = shallow(<Skills />);
+    render(<Skills />);
 
-    expect(wrapper.find("#skills").exists()).toBeTruthy();
-    expect(wrapper.find(".skills__container").length).toEqual(1);
-    expect(wrapper.find(".skills__subtitle").length).toEqual(1);
-    expect(wrapper.find(".skills__text").length).toEqual(1);
-    expect(wrapper.find(".skills__list").length).toEqual(2);
-    expect(wrapper.find(".skills__data").length).toEqual(6);
+    expect(screen.getByTestId("skills")).toBeTruthy();
+    expect(screen.getAllByRole("heading").length).toEqual(2);
+    expect(screen.getAllByRole("paragraph").length).toEqual(1);
+    expect(screen.getByText("Python")).toBeTruthy();
+    expect(screen.getByText("Java")).toBeTruthy();
+    expect(screen.getByText("JavaScript/TypeScript")).toBeTruthy();
+    expect(screen.getByText("Machine Learning/Deep Learning")).toBeTruthy();
+    expect(screen.getByText("Full-stack Development")).toBeTruthy();
+    expect(screen.getByText("DevOps")).toBeTruthy();
   });
 });

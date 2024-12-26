@@ -2,7 +2,7 @@ import aboutImg from "../images/about.png";
 
 const About = () => {
   return (
-    <section className="about section" id="about">
+    <section className="about section" id="about" data-testid="about">
       <h2 className="section-title">About</h2>
 
       <div className="about__container bd-container bd-grid">

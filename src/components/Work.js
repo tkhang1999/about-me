@@ -6,7 +6,7 @@ import ackcioImg from "../images/ackcio.png";
 
 const Work = () => {
   return (
-    <section className="work section" id="work">
+    <section className="work section" id="work" data-testid="work">
       <h2 className="section-title">Work Experience</h2>
       <div className="work__list bd-container">
         <div className="work__container">
